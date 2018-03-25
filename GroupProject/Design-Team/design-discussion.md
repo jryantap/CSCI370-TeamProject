@@ -88,4 +88,50 @@ Cons:
 
 ![Team design JPEG](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Grocery%20List%201.1.jpeg)
 
+Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
+:-- | :--: | :--: | :--: | :--: | :--: | :--:
+class User | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** class name: ManageList
+username | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+address | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+accountBalance | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+arrayList<list> | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+updateProfile() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+addNewList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+deleteList() | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** method name: createList()
+renameList() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+selectList() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+
+Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
+:-- | :--: | :--: | :--: | :--: | :--: | :--:
+class List | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+arrayList<item> | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+changeQuantity() | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** method name: updateQuantity
+saveList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+modifyList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+clearList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+showList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+addItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** part of class ItemInventory
+deleteItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** part of class ItemInventory
+search() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+checkOff() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+clearCheckOff() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+
+Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
+:-- | :--: | :--: | :--: | :--: | :--: | :--:
+class Item | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** class name: ItemInventory
+itemName | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+itemID | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+Quantity | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+checkOff | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+addItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+deleteItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+searchItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+
+Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
+:-- | :--: | :--: | :--: | :--: | :--: | :--:
+class ItemType | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+typeName | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** part of class List and ItemInventory; attribute name: ItemType
+typeID  | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+addnewType() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+
 ## Section 3: Summary
