@@ -1,7 +1,7 @@
 # Team 5 Design Discussion
 
 ## Section 1: Individual Designs
-Design 1: [370Spring18 Etanyuah](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18%20Etanyauh/design.PNG)
+Design 1: [370Spring18 Etanyuah](https://github.com/qc-se-spring2018/370Spring18Team5/tree/master/GroupProject/Design-Individual/370Spring18%20Etanyauh)
 
 ![Etanyuah](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18%20Etanyauh/design.PNG)
 
@@ -14,7 +14,7 @@ Cons:
 * Some required class objects may be missing.
 * Detailed lists may be missing.
 
-Design 2: [370Spring18jrtapang](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18jrtapang/design.pdf)
+Design 2: [370Spring18jrtapang](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18jrtapang)
 
 ![jrtapang](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18jrtapang/design.jpg)
 
@@ -28,7 +28,7 @@ Cons:
 * Design implementation may be convoluted.
 * Class associations are missing.
 
-Design 3: [370Spring18sasad](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18sasad/design.pdf)
+Design 3: [370Spring18sasad](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18sasad)
 
 ![sasad](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18sasad/design.jpg)
 
@@ -42,7 +42,7 @@ Cons:
 * Some methods and class objects may not be needed.
 * No class associations.
 
-Design 4: [370Spring18swli](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18swli/design.pdf)
+Design 4: [370Spring18swli](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18swli)
 
 ![swli](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18swli/design.jpg)
 
@@ -56,7 +56,7 @@ Cons:
 
 * Some object and/or fucntions may not be needed.
 
-Design 5: [370Spring18tchu](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tchu/design.pdf)
+Design 5: [370Spring18tchu](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tchu)
 
 ![tchu](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tchu/design.jpg)
 
@@ -70,7 +70,7 @@ Cons:
 * Design may be too simple.
 * Additional methods and objects may be needed.
 
-Design 6: [370Spring18tjesus](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tjesus/design.pdf)
+Design 6: [370Spring18tjesus](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tjesus)
 
 ![tjesus](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tjesus/design.jpeg)
 
