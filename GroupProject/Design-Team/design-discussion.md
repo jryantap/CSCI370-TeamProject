@@ -7,12 +7,12 @@ Design 1: [370Spring18 Etanyuah](https://github.com/qc-se-spring2018/370Spring18
 
 Pros:  
 * Classes are structured and methods are defined.
-* Followed protocol for assignment 5.
+* Followed protocol for Assignment 5.
 * Class relationships are visible.
 
 Cons:
-* Needed class objects maybe missing.
-* Detailed lists maybe missing.
+* Some required class objects may be missing.
+* Detailed lists may be missing.
 
 Design 2: [370Spring18jrtapang](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18jrtapang/design.pdf)
 
@@ -25,7 +25,7 @@ Pros:
 Cons:
 * GroceryDB may not be needed for actual implementation of project.
 * Some methods in design are not needed.
-* Design implementation maybe convoluted.
+* Design implementation may be convoluted.
 * Class associations are missing.
 
 Design 3: [370Spring18sasad](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18sasad/design.pdf)
@@ -48,9 +48,9 @@ Design 4: [370Spring18swli](https://github.com/qc-se-spring2018/370Spring18Team5
 
 Pros:
 
-* Detailed Class object and functions.
-* Class associatiations are visible.
-* Protocol for assignment 5 followed.
+* Detailed class objects and functions.
+* Class associations are visible.
+* Protocol for Assignment 5 followed.
 
 Cons:
 
@@ -67,28 +67,19 @@ Pros:
 * Assignment 5 protocol followed.
 
 Cons:
-* Design maybe too simple.
-* Additional methods and objects maybe needed.
+* Design may be too simple.
+* Additional methods and objects may be needed.
 
 Design 6: [370Spring18tjesus](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tjesus/design.pdf)
 
 ![tjesus](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tjesus/design.jpeg)
 
 Pros:
-* Has three important classes: List, Item, ManageList(User)
-* Has important methods for the classes:
-  * addToList()
-  * deleteFromList()
-  * updateQuantity()
-  * createList()
-  * renameList()
-  * selectList()
-  * deleteList()
-  * addItem()
-  * deleteItem()
+* Has three important classes: List, Item, ManageList(User).
+* Has some of the important methods for the classes.
 
 Cons:
-* Relationships not defined.
+* Associations not defined.
 * Should have a different class for Item Type.
 * Not all attributes have a type defined.
 * Missing some required methods and attributes.
