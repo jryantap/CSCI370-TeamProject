@@ -16,7 +16,7 @@ Cons:
 
 Design 2: [370Spring18jrtapang](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18jrtapang/design.pdf)
 
-![jrtapang]
+![jrtapang](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18jrtapang/design.jpg)
 
 Pros:
 * Followed Assignment 5 protocol for design.
@@ -30,6 +30,8 @@ Cons:
 
 Design 3: [370Spring18sasad](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18sasad/design.pdf)
 
+![sasad](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18sasad/design.jpg)
+
 Pros:
 
 * Assignment 5 protocol was followed.
@@ -41,6 +43,8 @@ Cons:
 * No class associations.
 
 Design 4: [370Spring18swli](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18swli/design.pdf)
+
+![swli](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18swli/design.jpg)
 
 Pros:
 
@@ -54,6 +58,8 @@ Cons:
 
 Design 5: [370Spring18tchu](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tchu/design.pdf)
 
+![tchu](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tchu/design.jpg)
+
 Pros:
 
 * Clear definition of classes.
@@ -65,6 +71,8 @@ Cons:
 * Additional methods and objects maybe needed.
 
 Design 6: [370Spring18tjesus](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tjesus/design.pdf)
+
+![tjesus](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18tjesus/design.jpeg)
 
 Pros:
 * Has three important classes: List, Item, ManageList(User)
