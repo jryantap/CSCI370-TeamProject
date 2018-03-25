@@ -3,17 +3,20 @@
 ## Section 1: Individual Designs
 Design 1: [370Spring18 Etanyuah](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18%20Etanyauh/design.PNG)
 
+![Etanyuah](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18%20Etanyauh/design.PNG)
+
 Pros:  
 * Classes are structured and methods are defined.
 * Followed protocol for assignment 5.
 * Class relationships are visible.
-
 
 Cons:
 * Needed class objects maybe missing.
 * Detailed lists maybe missing.
 
 Design 2: [370Spring18jrtapang](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Individual/370Spring18jrtapang/design.pdf)
+
+![jrtapang]
 
 Pros:
 * Followed Assignment 5 protocol for design.
@@ -54,7 +57,7 @@ Design 5: [370Spring18tchu](https://github.com/qc-se-spring2018/370Spring18Team5
 Pros:
 
 * Clear definition of classes.
-* Class assocations are visible.
+* Class associations are visible.
 * Assignment 5 protocol followed.
 
 Cons:
