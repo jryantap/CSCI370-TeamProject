@@ -84,4 +84,6 @@ Cons:
 
 ## Section 2: Team Design
 
+![Team design JPEG](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Grocery%20List%201.1.jpeg)
+
 ## Section 3: Summary
