@@ -135,6 +135,6 @@ typeID  | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
 addnewType() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 
 ## Section 3: Summary
-As a group, we were able to communicate which individual design is appropriate for this assignment and chose "the best" one.  We looked into different UML diagram submissions and pointed out flaws, redundancies in each individual submissions.  Taking to account the different perpectives of our members on how should the grocery app would look like, we check if the submission met this assignment requirement.  The team decided we go for a pros and cons approach and made notes of them in this md file (written below each submission).  
+As a group, we were able to communicate which individual design was appropriate for this assignment and chose "the best" one.  We looked into the different UML diagram submissions and pointed out some of the flaws and redundancies in each individual submission. Taking in to account the different perpectives of our members on how the grocery app should look like, we checked if the submissions met this assignment's requirements. The team decided to go with the pros and cons approach and made notes of them in this md file (written below each submission).  
 
-Base on the different designs, the group agreed to use tchu's design foundation.  It still lacked some object or needed edits but we worked together to achieve the final design which is also embedded in this md file and also in the team group folder.  
+Based on the different designs, the group agreed to use tchu's design foundation. Though it still lacked some objects and required editing, we worked together to achieve the final design which is embedded in this md file with a copy placed in the team's group folder.  
