@@ -96,42 +96,42 @@ address | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 accountBalance | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 arrayList<list> | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 updateProfile() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-addNewList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-deleteList() | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** method name: createList()
-renameList() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
-selectList() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+addNewList() | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
+deleteList() | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** method name: createList()
+renameList() | [ ] | [ ] | [ ] | [x] | [ ] | [x]
+selectList() | [ ] | [ ] | [ ] | [x] | [ ] | [x]
 
 Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
 :-- | :--: | :--: | :--: | :--: | :--: | :--:
-class List | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+class List | [ ] | [ ] | [ ] | [x] | [ ] | [x]
 arrayList<item> | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-changeQuantity() | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** method name: updateQuantity
+changeQuantity() | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** method name: updateQuantity
 saveList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 modifyList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 clearList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 showList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-addItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** part of class ItemInventory
-deleteItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** part of class ItemInventory
-search() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-checkOff() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-clearCheckOff() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+addItem() | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** part of class ItemInventory
+deleteItem() | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** part of class ItemInventory
+search() | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
+checkOff() | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
+clearCheckOff() | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
 
 Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
 :-- | :--: | :--: | :--: | :--: | :--: | :--:
-class Item | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** class name: ItemInventory
-itemName | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
-itemID | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
-Quantity | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
-checkOff | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-addItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
+class Item | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** class name: ItemInventory
+itemName | [ ] | [ ] | [ ] | [x] | [ ] | [x]
+itemID | [ ] | [ ] | [ ] | [x] | [ ] | [x]
+Quantity | [ ] | [ ] | [ ] | [x] | [ ] | [x]
+checkOff | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
+addItem() | [ ] | [ ] | [ ] | [x] | [ ] | [x]
 deleteItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
 searchItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 
 Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
 :-- | :--: | :--: | :--: | :--: | :--: | :--:
-class ItemType | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-typeName | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** part of class List and ItemInventory; attribute name: ItemType
-typeID  | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+class ItemType | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
+typeName | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** part of class List and ItemInventory; attribute name: ItemType
+typeID  | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
 addnewType() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
 
 ## Section 3: Summary
