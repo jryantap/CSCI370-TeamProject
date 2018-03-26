@@ -90,49 +90,49 @@ Cons:
 
 Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
 :-- | :--: | :--: | :--: | :--: | :--: | :--:
-class User | [ ] | [ ] | [ ] | [ ] | [ ] | [x] **Note:** class name: ManageList
-username | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-address | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-accountBalance | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+class User | [x] | [x] | [x] | [ ] | [x] | [x] **Note:** class name: ManageList
+username | [ ] | [x] | [ ] | [ ] | [x] | [ ]
+address | [ ] | [ ] | [ ] | [ ] | [x] | [ ]
+accountBalance | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
 arrayList<list> | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-updateProfile() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-addNewList() | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
-deleteList() | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** method name: createList()
-renameList() | [ ] | [ ] | [ ] | [x] | [ ] | [x]
-selectList() | [ ] | [ ] | [ ] | [x] | [ ] | [x]
+updateProfile() | [ ] | [ ] | [ ] | [ ] | [x] | [ ]
+addNewList() | [x] | [x] | [x] | [x] | [ ] | [ ]
+deleteList() | [x] | [x] | [x] | [x] | [ ] | [x] **Note:** method name: createList()
+renameList() | [x] | [x] | [x] | [x] | [ ] | [x]
+selectList() | [ ] | [x] | [x] | [x] | [ ] | [x]
 
 Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
 :-- | :--: | :--: | :--: | :--: | :--: | :--:
-class List | [ ] | [ ] | [ ] | [x] | [ ] | [x]
+class List | [x] | [x] | [x] | [x] | [x] | [x]
 arrayList<item> | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-changeQuantity() | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** method name: updateQuantity
-saveList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-modifyList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-clearList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-showList() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
-addItem() | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** part of class ItemInventory
-deleteItem() | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** part of class ItemInventory
-search() | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
-checkOff() | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
-clearCheckOff() | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
+changeQuantity() | [x] | [x] | [x] | [x] | [x] | [x] **Note:** method name: updateQuantity
+saveList() | [ ] | [x] | [ ] | [ ] | [x] | [ ]
+modifyList() | [ ] | [ ] | [ ] | [ ] | [x] | [ ]
+clearList() | [ ] | [x] | [x] | [ ] | [x] | [ ]
+showList() | [ ] | [x] | [ ] | [ ] | [x] | [ ]
+addItem() | [x] | [x] | [x] | [x] | [ ] | [x] **Note:** part of class ItemInventory
+deleteItem() | [x] | [x] | [x] | [x] | [ ] | [x] **Note:** part of class ItemInventory
+search() | [ ] | [ ] | [x] | [x] | [ ] | [ ]
+checkOff() | [x] | [x] | [x] | [x] | [ ] | [ ]
+clearCheckOff() | [ ] | [x] | [x] | [x] | [ ] | [ ]
 
 Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
 :-- | :--: | :--: | :--: | :--: | :--: | :--:
-class Item | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** class name: ItemInventory
-itemName | [ ] | [ ] | [ ] | [x] | [ ] | [x]
-itemID | [ ] | [ ] | [ ] | [x] | [ ] | [x]
-Quantity | [ ] | [ ] | [ ] | [x] | [ ] | [x]
-checkOff | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
-addItem() | [ ] | [ ] | [ ] | [x] | [ ] | [x]
-deleteItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [x]
-searchItem() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+class Item | [x] | [x] | [x] | [x] | [x] | [x] **Note:** class name: ItemInventory
+itemName | [x] | [x] | [x] | [x] | [x] | [x]
+itemID | [ ] | [ ] | [ ] | [x] | [x] | [x]
+Quantity | [ ] | [x] | [x] | [x] | [ ] | [x]
+checkOff | [x] | [x] | [ ] | [x] | [ ] | [ ]
+addItem() | [ ] | [x] | [ ] | [x] | [x] | [x]
+deleteItem() | [ ] | [x] | [ ] | [ ] | [x] | [x]
+searchItem() | [ ] | [ ] | [ ] | [ ] | [x] | [ ]
 
 Design-Team | Design 1 | Design 2 | Design 3 | Design 4 | Design 5 | Design 6
 :-- | :--: | :--: | :--: | :--: | :--: | :--:
-class ItemType | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
-typeName | [ ] | [ ] | [ ] | [x] | [ ] | [x] **Note:** part of class List and ItemInventory; attribute name: ItemType
-typeID  | [ ] | [ ] | [ ] | [x] | [ ] | [ ]
-addnewType() | [ ] | [ ] | [ ] | [ ] | [ ] | [ ]
+class ItemType | [x] | [ ] | [ ] | [x] | [x] | [ ]
+typeName | [x] | [ ] | [x] | [x] | [x] | [x] **Note:** part of class List and ItemInventory; attribute name: ItemType
+typeID  | [ ] | [ ] | [ ] | [x] | [x] | [ ]
+addnewType() | [ ] | [ ] | [ ] | [ ] | [x] | [ ]
 
 ## Section 3: Summary
 As a group, we were able to communicate which individual design was appropriate for this assignment and chose "the best" one.  We looked into the different UML diagram submissions and pointed out some of the flaws and redundancies in each individual submission. Taking in to account the different perpectives of our members on how the grocery app should look like, we checked if the submissions met this assignment's requirements. The team decided to go with the pros and cons approach and made notes of them in this md file (written below each submission).  
