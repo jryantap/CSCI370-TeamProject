@@ -18,30 +18,43 @@
 - *Scenarios: Sequence of events that characterize the use case. This part may include multiple scenarios, for normal, alternate, and exceptional event sequences. These scenarios may be expressed as a list of steps in natural language or as sequence diagrams.*
 
 __Create List__ |
-:--:| 
+---| 
 __Brief description:__ The Actor craete a new List|
 __Actor:__ Grocery Manager|
 __Preconditions:__ The actor must logs into the apps|
 __Post-conditions:__ New List is create|
-__Normal Course:__
-...1.The actor logs into apps
-...2.The apps authenticates the actor
-...3.The actor chooses to create a new list
-...4.The actor is guided by the apps to enter the name of new list
-...5.The apps acknowledges that list created
-...6.The actor leaves the apps|
+__Normal Course:__<br>
+<ol>
+	<li>1.The actor logs into apps</li>
+	<li>2.The apps authenticates the actor</li>
+	<li>3.The actor chooses to create a new list</li>
+	<li>4.The actor is guided by the apps to enter the name of new list</li>
+	<li>5.The apps acknowledges that list created</li>
+	<li>6.The actor leaves the apps|</li>
+</ol>|
 
-__Exception__
+
+
+
+__Exception__<br>
 Ex1 Apps determines the name of new list has been used
-...1.inform user that the name has been used
-...2.return to Normal Course step 4
+<ol>
+	<li>1.inform user that the name has been used</li>
+	<li>2.return to Normal Course step 4</li>
+</ol>
 
-Ex2 Actor logs off
-...1.return to Normal Course step 1
 
-Ex3  The name user enter containing symbol
-...1.inform user that there is no symbol in name of list
-...2.return Normal Course step 4|
+
+Ex2 Actor logs off<br>
+<ol>
+	<li>1.return to Normal Course step 1</li>
+</ol>
+
+Ex3  The name user enter containing symbol<br>
+<ol>
+	<li>1.inform user that there is no symbol in name of list</li>
+	<li>2.return Normal Course step 4</li>
+<ol>|
 
 
 
