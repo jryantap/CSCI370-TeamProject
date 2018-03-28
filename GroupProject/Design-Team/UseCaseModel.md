@@ -17,11 +17,11 @@
 - *Post-conditions Conditions that must be true once the use case is run.*
 - *Scenarios: Sequence of events that characterize the use case. This part may include multiple scenarios, for normal, alternate, and exceptional event sequences. These scenarios may be expressed as a list of steps in natural language or as sequence diagrams.*
 
-
+<!-- 1 -->
 <table>
 	<thead>
 		<tr>
-			<th><b>Create List</b></th>
+			<th colspan="3"><b>Creates List</b></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -45,12 +45,12 @@
 			<td><b>Normal Course:</b></td>
 			<td>
 				<ol>
-					<li>The actor logs into apps</li>
-					<li>The apps authenticates the actor</li>
-					<li>The actor chooses to create a new list</li>
-					<li>The actor is guided by the apps to enter the name of new list</li>
-					<li>The apps acknowledges that list created</li>
-					<li>The actor leaves the apps|</li>
+					<li>The Actor logs into apps</li>
+					<li>The app authenticates the Actor</li>
+					<li>The Actor chooses to create a new list</li>
+					<li>The Actor  enter the name of new list</li>
+					<li>The app acknowledges the list is created</li>
+					<li>The app redirect user to main page</li>
 				</ol>
 			</td>
 		</tr>
@@ -58,23 +58,158 @@
 			<td><b>Exception</b></td>
 			<td>Ex1 Apps determines the name of new list has been used
 				<ol>
-					<li>inform user that the name has been used</li>
+					<li>inform Actor that the name has been used</li>
 					<li>return to Normal Course step 4</li>
 				</ol>
 				Ex2 Actor logs off
 				<ol>
 					<li>return to Normal Course step 1</li>
 				</ol>
-				Ex3  The name user enter containing symbol<br>
+				Ex3  The name Actor enter containing symbol<br>
 				<ol>
-					<li>inform user that there is no symbol in name of list</li>
+					<li>inform Actor that there is no symbol in name of list</li>
 					<li>return Normal Course step 4</li>
 				</ol>
 			</td>
 		</tr>
 	</tbody>
 </table>
+<!-- 2 -->
+<table>
+	<thead>
+		<tr>
+			<th colspan="3"><b>Delete List</b></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Brief description:</b></td>
+			<td>The Actor deletes a  List</td>
+		</tr>
+		<tr>
+			<td><b>Actor:</b></td>
+			<td>Grocery Manager</td>
+		</tr>
+		<tr>
+			<td><b>Pre-conditions:</b></td>
+			<td>
+				<ol>
+					<li>The Actor must logs into the apps</li>
+					<li>The List must be created</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Post-conditions:</b></td>
+			<td>List is delete</td>
+		</tr>
+		<tr>
+			<td><b>Normal Course:</b></td>
+			<td>
+				<ol>
+					<li>The Actor logs into apps</li>
+					<li>The app authenticates the actor</li>
+					<li>The Actor chooses to delete a list</li>
+					<li>The Actor select one or more List</li>
+					<li>The app prompts actor to comfirm </li>
+					<li>The app acknowledges that list deleted</li>
+					<li>The apps redirect  user to the main page</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Alternate Courses</b></td>
+			<td>
+				AC1 deletem List inside the List
+				<ol>
+					<li>The Actor logs into apps</li>
+					<li>The app authenticates the actor</li>
+					<li>The Actor get into a list</li>
+					<li>The Actor chooses to delete the</li>
+					<li>The app prompts user to comfirm</li>
+					<li>The app acknowledges that list deleted</li>
+					<li>The actor leaves the app</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Exception</b></td>
+			<td>Ex1 Actor doesn't select any list
+				<ol>
+					<li>The app redirect user to main page</li>
+				</ol>
+				Ex2 Actor logs off
+				<ol>
+					<li>return to Normal Course step 1</li>
+				</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
+<!-- 3 -->
 
+<table>
+	<thead>
+		<tr>
+			<th colspan="3"><b>Rename List</b></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Brief description:</b></td>
+			<td>The Actor renames a  List</td>
+		</tr>
+		<tr>
+			<td><b>Actor:</b></td>
+			<td>Grocery Manager</td>
+		</tr>
+		<tr>
+			<td><b>Pre-conditions:</b></td>
+			<td>
+				<ol>
+					<li>The user must logs into the apps</li>
+					<li>The List must be created</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Post-conditions:</b></td>
+			<td>List is renamed</td>
+		</tr>
+		<tr>
+			<td><b>Normal Course:</b></td>
+			<td>
+				<ol>
+				<ol>
+					<li>The user logs into apps</li>
+					<li>The app authenticates the actor</li>
+					<li>The user select  a list</li>
+					<li>The user select the name of list and rename it</li>
+					<li>The app acknowledges that list deleted</li>
+					<li>The app redirect user to main page</li>
+				</ol>
+				</ol>
+			</td>
+		</tr>
 
+		<tr>
+			<td>Ex1 Apps determines the new name of list has been used
+				<ol>
+					<li>inform Actor that the name has been used</li>
+					<li>return to Normal Course step 4</li>
+				</ol>
+				Ex2 Actor logs off
+				<ol>
+					<li>return to Normal Course step 1</li>
+				</ol>
+				Ex3  The name Actor enter containing symbol<br>
+				<ol>
+					<li>inform Actor that there is no symbol in name of list</li>
+					<li>return Normal Course step 4</li>
+				</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
