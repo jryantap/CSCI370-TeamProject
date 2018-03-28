@@ -17,54 +17,64 @@
 - *Post-conditions Conditions that must be true once the use case is run.*
 - *Scenarios: Sequence of events that characterize the use case. This part may include multiple scenarios, for normal, alternate, and exceptional event sequences. These scenarios may be expressed as a list of steps in natural language or as sequence diagrams.*
 
-__Create List__ |
----| 
-__Brief description:__ The Actor craete a new List|
-__Actor:__ Grocery Manager|
-__Preconditions:__ The actor must logs into the apps|
-__Post-conditions:__ New List is create|
-__Normal Course:__<br>
-<ol>
-	<li>1.The actor logs into apps</li>
-	<li>2.The apps authenticates the actor</li>
-	<li>3.The actor chooses to create a new list</li>
-	<li>4.The actor is guided by the apps to enter the name of new list</li>
-	<li>5.The apps acknowledges that list created</li>
-	<li>6.The actor leaves the apps|</li>
-</ol>|
+
+<table>
+	<thead>
+		<tr>
+			<th><b>Create List</b></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Brief description:</b></td>
+			<td>The Actor craete a new List</td>
+		</tr>
+		<tr>
+			<td><b>Actor:</b></td>
+			<td>Grocery Manager</td>
+		</tr>
+		<tr>
+			<td><b>Pre-conditions:</b></td>
+			<td>The actor must logs into the apps</td>
+		</tr>
+		<tr>
+			<td><b>Post-conditions:</b></td>
+			<td>New List is create</td>
+		</tr>
+		<tr>
+			<td><b>Normal Course:</b></td>
+			<td>
+				<ol>
+					<li>The actor logs into apps</li>
+					<li>The apps authenticates the actor</li>
+					<li>The actor chooses to create a new list</li>
+					<li>The actor is guided by the apps to enter the name of new list</li>
+					<li>The apps acknowledges that list created</li>
+					<li>The actor leaves the apps|</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Exception</b></td>
+			<td>Ex1 Apps determines the name of new list has been used
+				<ol>
+					<li>inform user that the name has been used</li>
+					<li>return to Normal Course step 4</li>
+				</ol>
+				Ex2 Actor logs off
+				<ol>
+					<li>return to Normal Course step 1</li>
+				</ol>
+				Ex3  The name user enter containing symbol<br>
+				<ol>
+					<li>inform user that there is no symbol in name of list</li>
+					<li>return Normal Course step 4</li>
+				</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 
 
-
-__Exception__<br>
-Ex1 Apps determines the name of new list has been used
-<ol>
-	<li>1.inform user that the name has been used</li>
-	<li>2.return to Normal Course step 4</li>
-</ol>
-
-
-
-Ex2 Actor logs off<br>
-<ol>
-	<li>1.return to Normal Course step 1</li>
-</ol>
-
-Ex3  The name user enter containing symbol<br>
-<ol>
-	<li>1.inform user that there is no symbol in name of list</li>
-	<li>2.return Normal Course step 4</li>
-<ol>|
-
-
-
-__Create List__ |
-:-- | 
-__Brief description:__| |
-__Actor:__| |
-__Preconditions:__| |
-__Post-conditions:__|
-__Normal:__|
-__Alternate:__|
-__Exception__|
 
