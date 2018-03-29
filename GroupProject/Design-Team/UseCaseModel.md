@@ -191,23 +191,3 @@
 			</td>
 		</tr>
 
-		<tr>
-			<td>Ex1 App determines if the new name of the list has been used
-				<ol>
-					<li>inform Actor that the name has been used</li>
-					<li>return to Normal Course step 4</li>
-				</ol>
-				Ex2 Actor logs off
-				<ol>
-					<li>return to Normal Course step 1</li>
-				</ol>
-				Ex3  The name the Actor enters contains a symbol<br>
-				<ol>
-					<li>inform Actor that there are no symbols in name of list</li>
-					<li>return Normal Course step 4</li>
-				</ol>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
