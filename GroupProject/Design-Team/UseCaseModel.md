@@ -1,8 +1,6 @@
 # Use Case Model
 
-*This is the template for your use case model. The parts in italics are concise explanations of what should go in the corresponding sections and should not appear in the final document.*
-
-**Author**: \<team5\>
+**Author**: \<Team5\>
 
 ## 1 Use Case Diagram
 
@@ -48,15 +46,15 @@
 					<li>The Actor logs into apps</li>
 					<li>The app authenticates the Actor</li>
 					<li>The Actor chooses to create a new list</li>
-					<li>The Actor  enter the name of new list</li>
+					<li>The Actor enters the name of the new list</li>
 					<li>The app acknowledges the list is created</li>
-					<li>The app redirect user to main page</li>
+					<li>The app redirects the user to the main page</li>
 				</ol>
 			</td>
 		</tr>
 		<tr>
 			<td><b>Exception</b></td>
-			<td>Ex1 Apps determines the name of new list has been used
+			<td>Ex1 App determines if the name of the new list has been used
 				<ol>
 					<li>inform Actor that the name has been used</li>
 					<li>return to Normal Course step 4</li>
@@ -65,9 +63,9 @@
 				<ol>
 					<li>return to Normal Course step 1</li>
 				</ol>
-				Ex3  The name Actor enter containing symbol<br>
+				Ex3  The name the Actor enters contains a symbol<br>
 				<ol>
-					<li>inform Actor that there is no symbol in name of list</li>
+					<li>informs Actor that there are no symbols in name of list</li>
 					<li>return Normal Course step 4</li>
 				</ol>
 			</td>
@@ -84,7 +82,7 @@
 	<tbody>
 		<tr>
 			<td><b>Brief description:</b></td>
-			<td>The Actor deletes a  List</td>
+			<td>The Actor deletes a List</td>
 		</tr>
 		<tr>
 			<td><b>Actor:</b></td>
@@ -94,49 +92,49 @@
 			<td><b>Pre-conditions:</b></td>
 			<td>
 				<ol>
-					<li>The Actor must logs into the apps</li>
+					<li>The Actor must log into the app</li>
 					<li>The List must be created</li>
 				</ol>
 			</td>
 		</tr>
 		<tr>
 			<td><b>Post-conditions:</b></td>
-			<td>List is delete</td>
+			<td>List is deleted</td>
 		</tr>
 		<tr>
 			<td><b>Normal Course:</b></td>
 			<td>
 				<ol>
-					<li>The Actor logs into apps</li>
+					<li>The Actor logs into app</li>
 					<li>The app authenticates the actor</li>
 					<li>The Actor chooses to delete a list</li>
-					<li>The Actor select one or more List</li>
-					<li>The app prompts actor to comfirm </li>
-					<li>The app acknowledges that list deleted</li>
-					<li>The apps redirect  user to the main page</li>
+					<li>The Actor selects one or more lists</li>
+					<li>The app prompts actor to comfirm</li>
+					<li>The app acknowledges that the list is deleted</li>
+					<li>The apps redirects user to the main page</li>
 				</ol>
 			</td>
 		</tr>
 		<tr>
 			<td><b>Alternate Courses</b></td>
 			<td>
-				AC1 deletem List inside the List
+				AC1 delete List inside the List
 				<ol>
-					<li>The Actor logs into apps</li>
-					<li>The app authenticates the actor</li>
-					<li>The Actor get into a list</li>
-					<li>The Actor chooses to delete the</li>
+					<li>The Actor logs into app</li>
+					<li>The app authenticates the Actor</li>
+					<li>The Actor gets into a list</li>
+					<li>The Actor chooses to delete the list</li>
 					<li>The app prompts user to comfirm</li>
-					<li>The app acknowledges that list deleted</li>
+					<li>The app acknowledges that the list deleted</li>
 					<li>The actor leaves the app</li>
 				</ol>
 			</td>
 		</tr>
 		<tr>
 			<td><b>Exception</b></td>
-			<td>Ex1 Actor doesn't select any list
+			<td>Ex1 Actor doesn't select any lists
 				<ol>
-					<li>The app redirect user to main page</li>
+					<li>The app redirects user to main page</li>
 				</ol>
 				Ex2 Actor logs off
 				<ol>
@@ -158,7 +156,7 @@
 	<tbody>
 		<tr>
 			<td><b>Brief description:</b></td>
-			<td>The Actor renames a  List</td>
+			<td>The Actor renames a List</td>
 		</tr>
 		<tr>
 			<td><b>Actor:</b></td>
@@ -168,7 +166,7 @@
 			<td><b>Pre-conditions:</b></td>
 			<td>
 				<ol>
-					<li>The user must logs into the apps</li>
+					<li>The user must log into the app</li>
 					<li>The List must be created</li>
 				</ol>
 			</td>
@@ -182,19 +180,19 @@
 			<td>
 				<ol>
 				<ol>
-					<li>The user logs into apps</li>
+					<li>The user logs into app</li>
 					<li>The app authenticates the actor</li>
-					<li>The user select  a list</li>
-					<li>The user select the name of list and rename it</li>
-					<li>The app acknowledges that list deleted</li>
-					<li>The app redirect user to main page</li>
+					<li>The user selecs a list</li>
+					<li>The user selects the name of the list and renames it</li>
+					<li>The app acknowledges that the list is deleted</li>
+					<li>The app redirects user to main page</li>
 				</ol>
 				</ol>
 			</td>
 		</tr>
 
 		<tr>
-			<td>Ex1 Apps determines the new name of list has been used
+			<td>Ex1 App determines if the new name of the list has been used
 				<ol>
 					<li>inform Actor that the name has been used</li>
 					<li>return to Normal Course step 4</li>
@@ -203,9 +201,9 @@
 				<ol>
 					<li>return to Normal Course step 1</li>
 				</ol>
-				Ex3  The name Actor enter containing symbol<br>
+				Ex3  The name the Actor enters contains a symbol<br>
 				<ol>
-					<li>inform Actor that there is no symbol in name of list</li>
+					<li>inform Actor that there are no symbols in name of list</li>
 					<li>return Normal Course step 4</li>
 				</ol>
 			</td>
