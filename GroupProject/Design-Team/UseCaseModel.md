@@ -45,7 +45,7 @@
 				<ol>
 					<li>The user logs into apps</li>
 					<li>The app authenticates the user</li>
-					<li>The user chooses to create a new list</li>
+					<li>The user chooses "create new list"</li>
 					<li>The user enters the name of the new list</li>
 					<li>The app acknowledges the list is created</li>
 					<li>The app redirects the user to the main page</li>
@@ -116,7 +116,7 @@
 				<ol>
 					<li>The user logs into app</li>
 					<li>The app authenticates the user</li>
-					<li>The user chooses to delete a list</li>
+					<li>The user chooses "delete list"</li>
 					<li>The user selects one or more lists</li>
 					<li>The app prompts user to comfirm</li>
 					<li>The app acknowledges that the list is deleted</li>
@@ -131,8 +131,8 @@
 				<ol>
 					<li>The user logs into app</li>
 					<li>The app authenticates the user</li>
-					<li>The user gets into a list</li>
-					<li>The user chooses to delete the list</li>
+					<li>The user get into a list</li>
+					<li>The user chooses "delete list"</li>
 					<li>The app prompts user to comfirm</li>
 					<li>The app acknowledges that the list deleted</li>
 					<li>The apps redirects user to the main page</li>
@@ -345,8 +345,8 @@
 					<li>The user logs into apps</li>
 					<li>The app authenticates the actor</li>
 					<li>The user select a list</li>
+					<li>The user choose "delete item"</li>
 					<li>The user select one or more item</li>
-					<li>The user choose to delete the item</li>
 					<li>The app prompts user to comfirm</li>
 					<li>The app acknowledges that the item is deleted</li>
 					<li>The app redirects user to the item list page</li>
@@ -478,7 +478,7 @@
 					<li>The user logs into apps</li>
 					<li>The app authenticates the actor</li>
 					<li>The user select a list</li>
-					<li>The user choose to clear the list</li>
+					<li>The user choose "clear list"</li>
 					<li>The app prompts user to comfirm</li>
 					<li>The app acknowledges the list is cleared</li>
 					<li>The app redirects user to the item list page</li>
@@ -540,7 +540,7 @@
 				<ol>
 					<li>The user logs into apps</li>
 					<li>The app authenticates the actor</li>
-					<li>The user choose to reoder list</li>
+					<li>The user choose "modify list"</li>
 					<li>The user select two list</li>
 					<li>The app prompts user to comfirm</li>
 					<li>The app acknowledges order of list is changed</li>
@@ -604,7 +604,7 @@
 					<li>The user logs into apps</li>
 					<li>The app authenticates the actor</li>
 					<li>The user select list</li>
-					<li>The user choose to  check off item or remove check off</li>
+					<li>The user check off item or remove check off from item</li>
 					<li>The user select item</li>
 				</ol>
 			</td>
@@ -665,8 +665,9 @@
 					<li>The user logs into apps</li>
 					<li>The app authenticates the actor</li>
 					<li>The user select list</li>
-					<li>The user choose to  check off item or remove check off</li>
-					<li>The user select item</li>
+					<li>The user choose "clear check off"</li>
+					<li>The app acknowledges check off is cleared</li>
+					<li>The app redirects user to the item list page</li>
 				</ol>
 			</td>
 		</tr>
@@ -720,7 +721,7 @@
 			<td><b>Normal Course:</b></td>
 			<td>
 				<ol>
-					<li>The user choode to register</li>
+					<li>The user choode "register"</li>
 					<li>The app request the username and password</li>
 					<li>The user enter username and password</li>
 					<li>The app validates the entered name and password and created new account</li>
@@ -789,6 +790,65 @@
 				<ol>
 					<li>inform user for the constraint of user and password</li>
 					<li>return Normal Course step 2</li>
+				</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 13 -->
+<table>
+	<thead>
+		<tr>
+			<th colspan="3"><b>Update Profile</b></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Brief description:</b></td>
+			<td>The user change information of account</td>
+		</tr>
+		<tr>
+			<td><b>Actor:</b></td>
+			<td>User</td>
+		</tr>
+		<tr>
+			<td><b>Pre-conditions:</b></td>
+			<td>
+				<li>The user must log into the app</li>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Post-conditions:</b></td>
+			<td>The account information is changed</td>
+		</tr>
+		<tr>
+			<td><b>Normal Course:</b></td>
+			<td>
+				<ol>
+					<li>The user logs into apps</li>
+					<li>The app authenticates the actor</li>
+					<li>The user choose "update"</li>
+					<li>The user update information of account</li>
+					<li>The app acknowledges the account information is change</li>
+					<li>The app redirects user to the list page</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td><b>Exception</b></td>
+			<td>
+				Ex1 Actor logs off
+				<ol>
+					<li>return to Normal Course step 1</li>
+				</ol>
+				Ex2 app fails to authenticate the user
+				<ol>
+					<li>inform user and redirect to log in page</li>
+				</ol>
+				Ex3 cannot update information
+				<ol>
+					<li>inform user that an error has occured</li>
+					<li>return Normal Course step 3</li>
 				</ol>
 			</td>
 		</tr>
