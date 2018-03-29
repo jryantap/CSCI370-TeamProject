@@ -181,7 +181,6 @@
 			<td><b>Normal Course:</b></td>
 			<td>
 				<ol>
-				<ol>
 					<li>The user logs into apps</li>
 					<li>The app authenticates the actor</li>
 					<li>The user select  a list</li>
@@ -189,11 +188,10 @@
 					<li>The app acknowledges that list deleted</li>
 					<li>The app redirect user to main page</li>
 				</ol>
-				</ol>
 			</td>
 		</tr>
-
 		<tr>
+			<td><b>Exception</b></td>
 			<td>Ex1 Apps determines the new name of list has been used
 				<ol>
 					<li>inform Actor that the name has been used</li>
@@ -212,4 +210,3 @@
 		</tr>
 	</tbody>
 </table>
-
