@@ -4,7 +4,7 @@
 
 ## 1 Introduction
 
-This is an android app for managing grocery lists.
+This is an android app for managing grocery lists.(Possible revision: Our team will develope an Andriod app that will allow the user to create and manage grocery lists.)
 
 ## 2 Process Description
 
@@ -34,11 +34,10 @@ This is an android app for managing grocery lists.
 - Discovers and conveys the necessary features to the team for development.
 
 #### Design Team:
-
+   
 - Works on the look and feel of the app, replicating identical UI/UX (User Interface/User Experience) for the app.
 
 #### Dev Team:
-
 - Writes the app's code and builds the product's inner architecture to meet functional requirements.
 
 #### QA Team:
@@ -55,6 +54,6 @@ Roles | Team Members
 :-- | :--: |
 Project Manager |
 Design Team |
-Dev Team |
+Dev Team |: Sai Wai Li
 QA Team |
 Database Design |
