@@ -32,7 +32,7 @@ on an android device that have at least 100MB of space.
 
 ### 2.2 Deployment Diagram
 
-*This section should describe how the different components will be deployed on actual hardware devices. Similar to the previous subsection, this diagram may be unnecessary for simple systems; in these cases, simply state so and concisely state why.*
+- The app is simple and will run on Android devices that incorporates a database - a much needed component in this project.  
 
 ## 3 Low-Level Design
 
