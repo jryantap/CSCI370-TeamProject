@@ -48,4 +48,4 @@
 *Preliminary User Interface of the system.  (Update 1)*
 
 
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/GroceryApp_1.PNG">
+<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/GroceryApp_1.PNG" width="600" height="600" >
