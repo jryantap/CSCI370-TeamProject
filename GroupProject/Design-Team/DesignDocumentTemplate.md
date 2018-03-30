@@ -46,4 +46,4 @@
 
 ## 4 User Interface Design
 *Preliminary User Interface of the system.*
-
+<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/GroceryApp.JPG" width="500" height="700">
