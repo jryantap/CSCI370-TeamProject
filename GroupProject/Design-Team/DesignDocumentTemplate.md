@@ -10,12 +10,12 @@
 
 ### 1.1 Assumptions
 
-- We assume that the app is published on Google Play so the user can download it.  Or, the user can install the .apk on an android device that have at least 100MB of space with at least API version of 21 (Lollipop).   
+- We assume that the app is published on Google Play so the user can download it.  Or, the user can install the .apk directly on an android device that have at least 100MB of space with at least API version of 21 (Lollipop).   
 
 ### 1.2 Constraints
 
-- The app data base is local.  Any info the user enters in the app is saved locally.  When the user deletes the app, his or her info is also deleted.
-- User data is cannot be transferred to other mobile devices. As per first contraint.
+- The app data base is local.  Any info the user enters in the app is saved locally.  When the user deletes the app, his or her Grocerly List(s) is also deleted.
+- User data cannot be transferred to other mobile devices. As per first contraint.
 
 ### 1.3 System Environment
 
