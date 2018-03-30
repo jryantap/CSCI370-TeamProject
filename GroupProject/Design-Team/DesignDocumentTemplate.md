@@ -10,8 +10,7 @@
 
 ### 1.1 Assumptions
 
-- We assume that the app is published on Google Play so the user can download it.  Or, we user can install the .apk
-on an android device that have at least 100MB of space. 
+- We assume that the app is published on Google Play so the user can download it.  Or, the user can install the .apk on an android device that have at least 100MB of space with at least API version of 21 (Lollipop).   
 
 ### 1.2 Constraints
 
@@ -20,7 +19,7 @@ on an android device that have at least 100MB of space.
 
 ### 1.3 System Environment
 
-- The application is going to run on Android with a required system version (API) of 21.
+- The application is going to run on Android with a required system version (API) of 21: Lollipop.
 
 ## 2 Architectural Design
 
@@ -32,7 +31,7 @@ on an android device that have at least 100MB of space.
 
 ### 2.2 Deployment Diagram
 
-- The app is simple and will run on Android devices that incorporates a database - a much needed component in this project.  
+- The app is simple and will run on Android devices.  It will use a local database - a much needed component in this project.  
 
 ## 3 Low-Level Design
 
@@ -40,7 +39,7 @@ on an android device that have at least 100MB of space.
 
 ### 3.1 Class Diagram
 
-*In the case of an OO design, the internal structure of a software component would typically be expressed as a UML class diagram that represents the static class structure for the component and their relationships.*
+![Thomas Chu Diagram]<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Grocery%20List%201.1.jpeg" width="500" height="500">
 
 ### 3.2 Other Diagrams
 
@@ -62,4 +61,4 @@ on an android device that have at least 100MB of space.
 **NOTE:**  If the user clicks on the *Monthly List* button, same interface will be available and UI will look like from above design. 
 
 
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/GroceryApp_1.PNG" width="600" height="600" >
+<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/GroceryApp_1.PNG" width="500" height="500" >
