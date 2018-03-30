@@ -45,7 +45,7 @@
 *<u>Optionally</u>, you can decide to describe some dynamic aspects of your system using one or more behavioral diagrams, such as sequence and state diagrams.*
 
 ## 4 User Interface Design
-*Preliminary User Interface of the system.*
+*Preliminary User Interface of the system.  (Update 1)*
 
 
 <img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/GroceryApp.JPG" width="500" height="700">
