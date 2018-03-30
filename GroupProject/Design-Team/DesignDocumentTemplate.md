@@ -39,7 +39,7 @@
 
 ### 3.1 Class Diagram
 
-![Thomas Chu Diagram]<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Grocery%20List%201.1.jpeg" width="500" height="500">
+<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Grocery%20List%201.1.jpeg" width="500" height="500">
 
 ### 3.2 Other Diagrams
 
