@@ -25,7 +25,7 @@
 
 ### 2.1 Component Diagram
 
-Since this is a static app, there is no need for a back end to store user data.  It just uses regular components included in the android development environment.  
+- Since this is a static app, there is no need for a back end to store user data.  It just uses regular components included in the android development environment.  
 
 ### 2.2 Deployment Diagram
 
