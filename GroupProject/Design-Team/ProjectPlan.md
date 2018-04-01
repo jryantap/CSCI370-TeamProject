@@ -54,6 +54,6 @@ Roles | Team Members
 :-- | :--: |
 Project Manager |
 Design Team |
-Dev Team |: Sai Wai Li
-QA Team |
+Dev Team | Sai Wai Li
+QA Team | Thom De Jesus
 Database Design |
