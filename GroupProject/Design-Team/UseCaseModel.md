@@ -1,6 +1,6 @@
 # Use Case Model
 
-**Author**: \<Team5\>
+**Author**: \<Sai Wai Li\>
 
 ## 1 Use Case Diagram
 
