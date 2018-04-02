@@ -8,12 +8,22 @@
 
 ## 2 Process Description
 
-*Process description as a set of activities; for each activity, provide the following:*
+*Process description as a set of activities;*
 
-- *Activity name (verb or verb phrase)*
-- *Activity description (concise paragraph)*
-- *Entrance criteria (inputs needed for the activity)*
-- *Exit criteria (outputs produced by the activity and how you know it has been completed satisfactorily)*
+*Update 1*
+- Description of each activity should resemble as described in the [Design Document Template](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/DesignDocumentTemplate.md)
+- Main Activity:  provides user log-in for list access.
+	- *Entrance criteria*: user use keyboard to enter info.
+	- *Exit criteria*:  activity runs as intended when user enters correct info, activity switches to next.
+- Grocery Lists Activity:  User can choose between Weekly List and Monthly List.
+	- *Entrance criteria*: Navigated from main activity/log on screen.  In this activity, the user can choose between the two list mentioned above.  User can also decide return to previous screen if user chooses to do so.
+	- *Exit criteria*: activity runs as intended if user is navigated the next activity module.
+- Weekly Lists Activity:  User can view/access his or her shopping items.  Provides add/deletion of items and navigate to previous activity.
+	- *Entrance criteria*: From grocery list activity, this activity is shown so that user can view all lists individually
+	- *Exit criteria*: activity is running as intended if user is able to choose which items can be deleted from the list, add, check or navigate to a more concise list.
+- Montly Lists Activity:  User can view/access his or her monthly shopping items.  Same as above.
+	- *Entrace criteria*:  A more detailed list of user's shopping items.  User is takent to this activity after chosing or clicking which shopping item he she was to edit.
+	- *Exit criteria*:  Runs as intended if user is able to edit items to desired outcome.
 
 ## 3 Team
 
@@ -52,8 +62,8 @@
 
 Roles | Team Members
 :-- | :--: |
-Project Manager |
-Design Team | Joseph Huaynate
+Project Manager | (Undecided)
+Design Team | Joseph Huaynate, Jherico-Ryan Tapang
 Dev Team | Sai Wai Li
 QA Team | Thom De Jesus, Joseph Huaynate
-Database Design |
+Database Design | (Undecided)
