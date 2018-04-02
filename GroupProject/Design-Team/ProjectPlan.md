@@ -64,6 +64,6 @@ Roles | Team Members
 :-- | :--: |
 Project Manager | (Undecided)
 Design Team | Joseph Huaynate, Jherico-Ryan Tapang
-Dev Team | Sai Wai Li
-QA Team | Thom De Jesus, Joseph Huaynate, Thomas Chu
+Dev Team | Sai Wai Li, Thomas Chu
+QA Team | Thom De Jesus, Joseph Huaynate
 Database Design | (Undecided)
