@@ -4,7 +4,7 @@
 
 ## 1 Introduction
 
-This is an android app for managing grocery lists.(Possible revision: Our team will develope an Andriod app that will allow the user to create and manage grocery lists.)
+ Our team will develope an Andriod app that will allow the user to create and manage grocery lists.
 
 ## 2 Process Description
 
@@ -20,7 +20,7 @@ This is an android app for managing grocery lists.(Possible revision: Our team w
 ### Team Members:
 
 - Jherico-Ryan Tapang
-- Joseph Huaynat
+- Joseph Huaynate
 - Thom De Jesus
 - Thomas Chu
 - Sai Wai Li
@@ -53,7 +53,7 @@ This is an android app for managing grocery lists.(Possible revision: Our team w
 Roles | Team Members
 :-- | :--: |
 Project Manager |
-Design Team |
+Design Team | Joseph Huaynate
 Dev Team | Sai Wai Li
-QA Team | Thom De Jesus
+QA Team | Thom De Jesus, Joseph Huaynate
 Database Design |
