@@ -66,4 +66,4 @@ Project Manager | (Undecided)
 Design Team | Joseph Huaynate, Jherico-Ryan Tapang
 Dev Team | Sai Wai Li, Thomas Chu
 QA Team | Thom De Jesus, Joseph Huaynate
-Database Design | (Undecided)
+Database Design | Sayem Asad
