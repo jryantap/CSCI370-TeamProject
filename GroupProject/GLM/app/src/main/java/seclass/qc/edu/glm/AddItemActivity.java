@@ -1,4 +1,4 @@
 package seclass.qc.edu.glm;
 
-public class DataBaseStore {
+public class AddItemActivity {
 }
