@@ -25,6 +25,11 @@
 	- *Entrace criteria*:  A more detailed list of user's shopping items.  User is takent to this activity after chosing or clicking which shopping item he she was to edit.
 	- *Exit criteria*:  Runs as intended if user is able to edit items to desired outcome.
 
+*Update 2 (same description can be found in DesignDocumentTemplate.md)*
+1.  The team decided to remove user login screen.  It maybe implement for a future update of the app.
+2.  At app start-up user is taken to the Shopping List menu.  There is a a FAB (floating action button) on bottom right corner that the user can click.
+3.  When the user clicks on the FAB button, user is taken to the "Enter List Name" interface.  In this interface, the user can enter the list she/he wants to create.  When the user hits the check mark, the newly created list is saved in the system user it taken to another screen.
+
 ## 3 Team
 
 ### Team Members:
