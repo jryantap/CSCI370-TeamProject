@@ -66,7 +66,7 @@
 2.  At app start-up user is taken to the Shopping List menu.  There is a a FAB (floating action button) on bottom right corner that the user can click.
 3.  When the user clicks on the FAB button, user is taken to the "Enter List Name" interface.  In this interface, the user can enter the list she/he wants to create.  When the user hits the check mark, the newly created list is saved in the system user it taken to another screen.
 
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/Update-2/ui.PNG" width="500" height="500">
+<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/Update-2/ui.PNG">
 
 
 
