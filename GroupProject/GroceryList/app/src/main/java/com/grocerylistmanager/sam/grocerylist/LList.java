@@ -1,13 +1,44 @@
 package com.grocerylistmanager.sam.grocerylist;
 
+import java.util.ArrayList;
+
 /**
  * Created by sam on 4/12/2018.
  */
 
 public class LList {
-    private String[] item={"11","22","33","44","55","66","77","88","99","10","11","12","13"};
+    private String listName;
+     boolean isSelected;
+    public ArrayList<Item> itemList;
 
-    public String[] getList(){
-        return item;
+    LList(String name,boolean isSelected){
+        this.listName = name;
+        this.isSelected = isSelected;
+        itemList = new ArrayList<Item>();
+    }
+
+    public String getListName() {
+        return listName;
+    }
+
+    public void setListName(String listName) {
+        this.listName = listName;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
+    }
+
+    public void addItem(Item item){
+        boolean onList = false;
+        for(Item p : itemList){
+            if(p.getItemName().equals(item.getItemName()) && p.getType().equals((item.getType()))){
+                p.setAmount(item.getAmount());
+            }
+        }
     }
 }

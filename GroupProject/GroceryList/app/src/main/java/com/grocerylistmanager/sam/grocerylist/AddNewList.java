@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddNewList extends AppCompatActivity {
     private Button submitButton;
@@ -18,6 +20,16 @@ public class AddNewList extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                EditText list = (EditText) findViewById(R.id.NewList);
+                String name = list.getText().toString();
+                if(name.equals("")){
+                    Toast.makeText(AddNewList.this,"please enter a name",Toast.LENGTH_LONG).show();
+                }else{
+                    Intent intent = new Intent();
+                    intent.putExtra("ListName",name);
+                    setResult(RESULT_OK,intent);
+                    finish();
+                }
 
             }
         });
@@ -26,8 +38,10 @@ public class AddNewList extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
-                return true;
+                Intent intent = new Intent();
+                intent.putExtra("ListName","");
+                setResult(RESULT_CANCELED,intent);
+                finish();
         }
         return super.onOptionsItemSelected(item);
     }
