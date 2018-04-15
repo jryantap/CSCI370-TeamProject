@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ListView;
 
 public class CatalogActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
 
@@ -28,6 +28,23 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
                 startActivity(intent);
             }
         });
+
+        //find the List view which will be populated with this list data
+        ListView shopplingListView = (ListView) findViewById(R.id.list);
+
+        //when the list has 0 items, use this view
+        View empytView = findViewById(R.id.empty_view);
+        shopplingListView.setEmptyView(empytView);
+
+        //use this adapter to populate the shoppingListView
+        //reference:  https://github.com/codepath/android_guides/wiki/Populating-a-ListView-with-a-CursorAdapter
+        ShoppingListCursorAdapter shoppingListCursorAdapter = new ShoppingListCursorAdapter(this, null);
+        shopplingListView.setAdapter(shoppingListCursorAdapter);
+
+
+
+
+
 
 
 
