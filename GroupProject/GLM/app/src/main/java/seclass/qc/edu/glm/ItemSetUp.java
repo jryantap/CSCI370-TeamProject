@@ -1,10 +1,10 @@
 package seclass.qc.edu.glm;
 
 /**
- * Item class setup - may need
+ * ItemSetUp class setup - may need
  */
 
-public class Item {
+public class ItemSetUp {
 
     long id_;
     String name;
@@ -13,7 +13,7 @@ public class Item {
     int price;
     boolean isObtained;
 
-    public Item(int id_category, int quantity, int price, boolean isObtained)
+    public ItemSetUp(int id_category, int quantity, int price, boolean isObtained)
     {
         this.id_category = id_category;
         this.quantity = quantity;
@@ -21,7 +21,7 @@ public class Item {
         this.isObtained = isObtained;
     }
 
-    public Item(String name)
+    public ItemSetUp(String name)
     {
         this.name = name;
     }
@@ -83,7 +83,7 @@ public class Item {
 
     @Override
     public String toString(){
-        return "Item{" + "category_id" + id_category + ", quantity = " + quantity
+        return "ItemSetUp{" + "category_id" + id_category + ", quantity = " + quantity
                 + ", price " + price + ", is obtained= " + isObtained + '}';
     }
 
