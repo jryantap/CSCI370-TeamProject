@@ -11,7 +11,7 @@ import android.widget.EditText;
 public class CreateListActivity extends AppCompatActivity {
 
     //EditText to enter field name
-    EditText enterEditeText;
+    EditText enterEditText;
 
     //uniform resource locator to help locate files or resources
     Uri currentListUri;
@@ -27,7 +27,7 @@ public class CreateListActivity extends AppCompatActivity {
         currentListUri = intent.getData();
 
         //Find all relevant views that are needed to read user input from
-        enterEditeText = (EditText) findViewById(R.id.edit_list_name);
+        enterEditText = (EditText) findViewById(R.id.edit_list_name);
 
 //        if (currentListUri == null) {
 //            setTitle("Add new product");
