@@ -7,6 +7,8 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
+
+//pop up window for delete item or list
 public class Pop extends Activity {
 
     @Override

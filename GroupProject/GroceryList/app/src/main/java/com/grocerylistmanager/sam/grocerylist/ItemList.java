@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+//list of item
 public class ItemList extends AppCompatActivity {
     private int position;
     List<Item> itemList;
@@ -45,12 +46,14 @@ public class ItemList extends AppCompatActivity {
         });
     }
 
+    //button in action menu bar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.item_list,menu);
         return true;
     }
 
+    //read data
     public void initItems(){
         itemList = new ArrayList<Item>();
 
@@ -66,6 +69,8 @@ public class ItemList extends AppCompatActivity {
         arrayText.recycle();
     }
 
+
+    //delete item
     public void detele(){
         Iterator<Item> i = itemList.iterator();
         while (i.hasNext()) {
@@ -77,6 +82,7 @@ public class ItemList extends AppCompatActivity {
 
     }
 
+    //action of button in action bar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
@@ -95,6 +101,7 @@ public class ItemList extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    // for send back data
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 4 && resultCode == RESULT_OK){
             Item p = itemList.get(index);

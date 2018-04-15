@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * Created by sam on 4/12/2018.
  */
-
+// adapter for main Activity list
 public class AdapterList extends BaseAdapter {
     private List<LList> itemList;
     private Context context;
@@ -73,7 +73,7 @@ public class AdapterList extends BaseAdapter {
         holder.checkBox.setChecked(p.isSelected());
         holder.checkBox.setTag(p);
 
-
+        //set isSelected and checkbox is checked
         holder.checkBox.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 boolean newState = !itemList.get(position).isSelected();

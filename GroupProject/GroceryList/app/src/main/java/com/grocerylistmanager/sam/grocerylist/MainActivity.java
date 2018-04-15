@@ -25,16 +25,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //set up the list layout
         listView =(ListView) findViewById(R.id.groceryList);
         initItems();
         ListAdapter = new AdapterList(MainActivity.this,itemList);
         listView.setAdapter(ListAdapter);
 
+        //go to the itemlist when click the list.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(),ItemList.class);
-                intent.putExtra("position",i);
+                intent.putExtra("position",i); //to find which list has been click
                 startActivity(intent);
             }
         });;
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //read the data to list
     public void initItems(){
         itemList = new ArrayList<LList>();
 
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         arrayText.recycle();
     }
 
+    //delete list
     public void detele(){
         Iterator<LList> i = itemList.iterator();
         while (i.hasNext()) {
@@ -69,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    //for menu action
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
@@ -86,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //button on action bar plug in
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_context,menu);
@@ -93,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //the send back data from addlist and delete list
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 2 && resultCode == RESULT_OK){

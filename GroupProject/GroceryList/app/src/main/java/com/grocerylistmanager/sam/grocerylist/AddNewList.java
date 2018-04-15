@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+//page for add new list
 public class AddNewList extends AppCompatActivity {
     private Button submitButton;
     @Override
@@ -35,6 +36,7 @@ public class AddNewList extends AppCompatActivity {
         });
     }
 
+    //back to preview page icon
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case R.id.home:

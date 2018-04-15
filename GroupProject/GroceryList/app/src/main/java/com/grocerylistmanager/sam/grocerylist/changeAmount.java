@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+// pop up window for change item quantity in item list
 public class changeAmount extends AppCompatActivity {
     String quantity;
     @Override
@@ -22,6 +23,7 @@ public class changeAmount extends AppCompatActivity {
         int width=dm.widthPixels;
         int height=dm.heightPixels;
 
+        // set the size of pop up window
         getWindow().setLayout((int)(width*0.8), (int)(height*0.4));
         Button ok = (Button) findViewById(R.id.okButton);
         Button cancel = (Button) findViewById(R.id.cancelButton);

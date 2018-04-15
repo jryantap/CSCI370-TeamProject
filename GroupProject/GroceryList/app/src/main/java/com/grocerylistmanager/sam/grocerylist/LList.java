@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by sam on 4/12/2018.
  */
-
+// class for grocery list
 public class LList {
     private String listName;
      boolean isSelected;
@@ -32,6 +32,7 @@ public class LList {
     public void setSelected(boolean selected) {
         isSelected = selected;
     }
+
 
     public void addItem(Item item){
         boolean onList = false;
