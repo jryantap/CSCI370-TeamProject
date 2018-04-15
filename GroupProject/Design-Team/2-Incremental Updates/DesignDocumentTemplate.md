@@ -1,6 +1,6 @@
 # Design Document
 
-**Author**: **Jherico-Ryan Tapang and Sayem Asad**
+**Author**: **Jherico-Ryan Tapang**
 
 ## 1 Design Considerations
 
