@@ -34,7 +34,7 @@ public class ShoppingListCursorAdapter extends CursorAdapter{
     {
         TextView nameTextView = (TextView) view.findViewById(R.id.list_name_text_view);
 
-        String name = cursor.getString(cursor.getColumnIndexOrThrow(ShoppingListSetUp.ShopplingListEntry.COLUMN_LIST_NAME));
+        String name = cursor.getString(cursor.getColumnIndexOrThrow(ShoppingListSetUp.ShoppingListEntry.COLUMN_LIST_NAME));
 
         nameTextView.setText(name);
     }
