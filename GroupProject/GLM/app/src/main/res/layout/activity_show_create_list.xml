@@ -8,7 +8,7 @@
     tools:context=".CreateListActivity">
 
     <EditText
-        android:id="@+id/edit_list_name"
+        android:id="@+id/editlist_name"
         android:hint="Enter list name"
         android:inputType="textCapWords"
         android:layout_width="match_parent"

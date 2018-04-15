@@ -8,6 +8,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 
+
+
 public class CreateListActivity extends AppCompatActivity {
 
     //EditText to enter field name
@@ -27,7 +29,7 @@ public class CreateListActivity extends AppCompatActivity {
         currentListUri = intent.getData();
 
         //Find all relevant views that are needed to read user input from
-        enterEditText = (EditText) findViewById(R.id.edit_list_name);
+        enterEditText = (EditText) findViewById(R.id.editlist_name);
 
 //        if (currentListUri == null) {
 //            setTitle("Add new product");
