@@ -1,0 +1,17 @@
+<resources>
+    <!-- app name -->
+    <string name="app_name">GLM</string>
+
+    <!-- Title text for the empty view, which describes the empty catalog image -->
+    <string name="item_empty_view_title_text">Add your first item to the list</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add an item -->
+    <string name="item_empty_view_subtitle_text">by pressing the plus button</string>
+
+    <!-- Title text for the empty view, which describes the empty catalog image -->
+    <string name="list_empty_view_title_text">Create your first list</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a list  -->
+    <string name="list_empty_view_subtitle_text">by pressing the plus button</string>
+
+</resources>
