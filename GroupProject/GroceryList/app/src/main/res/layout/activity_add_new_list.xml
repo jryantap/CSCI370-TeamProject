@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.grocerylistmanager.sam.grocerylist.AddNewList">
+    tools:context="edu.qc.seclass.grocerylist.AddNewList">
 
 
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="119dp"
+        android:layout_height="63dp"
         android:layout_marginBottom="293dp"
         android:layout_marginEnd="158dp"
         android:layout_marginStart="138dp"
         android:layout_marginTop="58dp"
         android:text="Submit"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

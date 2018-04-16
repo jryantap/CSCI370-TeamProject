@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.grocerylistmanager.sam.grocerylist">
+    package="edu.qc.seclass.grocerylist">
 
     <application
         android:allowBackup="true"
@@ -16,13 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddNewList"
+        <activity
+            android:name=".AddNewList"
             android:label="Add New List"
-            android:parentActivityName=".MainActivity"/>s
-
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ItemList"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="Search"></activity>
+        <activity
+            android:name=".Result"
+            android:parentActivityName=".Search">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Search" />
+        </activity>
+        <activity
+            android:name=".Pop"
+            android:theme="@style/pop_up" />
+        <activity
+            android:name=".changeAmount"
+            android:theme="@style/pop_up" />
+        <activity android:name=".createNew"></activity>
     </application>
 
 </manifest>
