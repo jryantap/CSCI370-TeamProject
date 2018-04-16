@@ -96,7 +96,9 @@ public class ItemList extends AppCompatActivity {
                 return true;
 
             case R.id.action_search:
-                startActivity(new Intent(this,Search.class));
+                Intent intent = new Intent(getApplicationContext(),Search.class);
+                intent.putExtra("position",index); //to find which list has been click
+                startActivity(intent);
                 return true;
             case R.id.action_delList:
                 startActivityForResult(new Intent(getApplicationContext(),Pop.class),3);// pop up confirm  window

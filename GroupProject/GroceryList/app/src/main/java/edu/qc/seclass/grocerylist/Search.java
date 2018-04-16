@@ -25,11 +25,13 @@ public class Search extends AppCompatActivity {
    List<type> typeList;
     ListView listView;
     searchAdapter searchAdapter;
-
+    int position;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+        Intent intent = getIntent();
+        position = intent.getIntExtra("position",-1);
         listView =(ListView) findViewById(R.id.searchList);
         initItems();
         searchAdapter =new searchAdapter(Search.this,typeList);
@@ -53,6 +55,7 @@ public class Search extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(),Result.class);
                     intent.putExtra("type",selectedtext); //to find which list has been click
                     intent.putExtra("searchName",name);
+                    intent.putExtra("list",position);
                     startActivity(intent);
                 }
             }
@@ -65,6 +68,7 @@ public class Search extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),Result.class);
                 intent.putExtra("type","Type"); //to find which list has been click
                 intent.putExtra("searchName",s);
+                intent.putExtra("list",position);
                 startActivity(intent);
             }
         });
