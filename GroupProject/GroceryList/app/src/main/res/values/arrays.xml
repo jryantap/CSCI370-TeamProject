@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="product">
+        <item>"aaa bbb ccc"</item>
+        <item>"bbb"</item>
+        <item>"ccc"</item>
+        <item>"ddd"</item>
+        <item>"eee"</item>
+        <item>"fff"</item>
+        <item>"ggg"</item>
+        <item>"hhh"</item>
+        <item>"iii"</item>
+        <item>"jjj"</item>
+        <item>"kkk"</item>
+        <item>"lll"</item>
+    </array>
+    <array name="list">
+        <item>"Weekly happy good bad"</item>
+        <item>"daily"</item>
+        <item>"hour"</item>
+        <item>"time"</item>
+        <item>"year"</item>
+        <item>"target"</item>
+        <item>"annual"</item>
+        <item>"bestBuy"</item>
+        <item>"amazon"</item>
+        <item>"skyView"</item>
+
+    </array>
+</resources>
