@@ -61,7 +61,7 @@ public class ShoppingListSetUp {
 //        public void onCreate(SQLiteDatabase db) {
 //
 //            // create notes table
-//            db.execSQL(Note.CREATE_TABLE);
+//            db.execSQL(shoppingList.CREATE_TABLE);
 //        }
 //
 //        // Upgrading database
