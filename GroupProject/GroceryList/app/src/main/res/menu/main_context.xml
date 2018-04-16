@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.grocerylistmanager.sam.grocerylist.MainActivity">
+    tools:context="edu.qc.seclass.grocerylist.MainActivity">
     <item
         android:id="@+id/action_addList"
         android:icon="@drawable/ic_addlist"
@@ -15,6 +15,11 @@
         android:icon="@drawable/ic_delete"
         android:title="AddList"
         app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_clearCheck"
+        android:title="clearCheck"
+        app:showAsAction="never"
         />
 
 </menu>

@@ -1,4 +1,4 @@
-package com.grocerylistmanager.sam.grocerylist;
+package edu.qc.seclass.grocerylist;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -68,8 +68,17 @@ public class MainActivity extends AppCompatActivity {
             if(o.isSelected())
                 i.remove();
         }
-        ListAdapter.notifyDataSetChanged();;
+        ListAdapter.notifyDataSetChanged();
 
+    }
+
+
+    //remove all check off
+    public void clearCheck(){
+        for(LList p:itemList){
+            p.isSelected =false;
+        }
+        ListAdapter.notifyDataSetChanged();
     }
 
 
@@ -82,8 +91,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.action_delList:
                 startActivityForResult(new Intent(getApplicationContext(),Pop.class),3);// pop up confirm  window
-
                 return true;
+            case R.id.action_clearCheck:
+                clearCheck();
 
 
         }

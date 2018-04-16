@@ -1,4 +1,4 @@
-package com.grocerylistmanager.sam.grocerylist;
+package edu.qc.seclass.grocerylist;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,6 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 // pop up window for change item quantity in item list
 public class changeAmount extends AppCompatActivity {

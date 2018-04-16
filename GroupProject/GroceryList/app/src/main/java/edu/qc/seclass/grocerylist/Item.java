@@ -1,4 +1,4 @@
-package com.grocerylistmanager.sam.grocerylist;
+package edu.qc.seclass.grocerylist;
 
 /**
  * Created by sam on 4/13/2018.

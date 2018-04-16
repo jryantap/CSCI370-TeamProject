@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/popup_border"
-    tools:context="com.grocerylistmanager.sam.grocerylist.changeAmount">
+    tools:context="edu.qc.seclass.grocerylist.changeAmount">
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"

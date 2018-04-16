@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.grocerylistmanager.sam.grocerylist.Search"
+    tools:context="edu.qc.seclass.grocerylist.Search"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -50,6 +50,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_toEndOf="@+id/nameButton"
                 android:text="Type"
+                android:checked="true"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/search" />
 
@@ -66,7 +67,7 @@
         </RadioGroup>
     </RelativeLayout>
     <ListView
-        android:id="@+id/groceryList"
+        android:id="@+id/searchList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.grocerylistmanager.sam.grocerylist;
+package edu.qc.seclass.grocerylist;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

@@ -1,4 +1,4 @@
-package com.grocerylistmanager.sam.grocerylist;
+package edu.qc.seclass.grocerylist;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -8,11 +8,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -78,8 +75,16 @@ public class ItemList extends AppCompatActivity {
             if(o.isSelected())
                 i.remove();
         }
-        itemAdapter.notifyDataSetChanged();;
+        itemAdapter.notifyDataSetChanged();
 
+    }
+
+    //remove all check off
+    public void clearCheck(){
+        for(Item p:itemList){
+            p.isSelected =false;
+        }
+        itemAdapter.notifyDataSetChanged();
     }
 
     //action of button in action bar
@@ -97,6 +102,8 @@ public class ItemList extends AppCompatActivity {
                 startActivityForResult(new Intent(getApplicationContext(),Pop.class),3);// pop up confirm  window
 
                 return true;
+            case R.id.action_clearCheck:
+                clearCheck();
         }
         return super.onOptionsItemSelected(item);
     }

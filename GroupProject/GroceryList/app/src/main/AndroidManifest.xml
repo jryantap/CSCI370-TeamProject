@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.grocerylistmanager.sam.grocerylist">
+    package="edu.qc.seclass.grocerylist">
 
     <application
         android:allowBackup="true"
@@ -33,24 +33,21 @@
         </activity>
         <activity
             android:name=".Search"
-            android:label="Search"
-            android:parentActivityName=".ItemList">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ItemList" />
-        </activity>
+            android:label="Search"></activity>
         <activity
             android:name=".Result"
             android:parentActivityName=".Search">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ItemList" />
+                android:value=".Search" />
         </activity>
         <activity
             android:name=".Pop"
-            android:theme="@style/pop_up"></activity>
-        <activity android:name=".changeAmount"
-            android:theme="@style/pop_up"></activity>
+            android:theme="@style/pop_up" />
+        <activity
+            android:name=".changeAmount"
+            android:theme="@style/pop_up" />
+        <activity android:name=".createNew"></activity>
     </application>
 
 </manifest>
