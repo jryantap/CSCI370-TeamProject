@@ -68,6 +68,9 @@
 
 <img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/ui.PNG">
 
+Activity Diagram Update
+
+<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Grocery%20List%201.1.jpeg" width="500" height="500">
 
 
 
