@@ -37,7 +37,7 @@
 
 ### 3.1 Class Diagram
 
-<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Grocery%20List%201.1.jpeg" width="500" height="500">
+<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/2-Incremental%20Updates/Grocery%20List%201.1.jpeg" width="500" height="500">
 
 ### 3.2 Other Diagrams
 
@@ -58,7 +58,7 @@
 
 **NOTE:**  If the user clicks on the *Monthly List* button, same interface will be available and UI will look like from above design. 
 
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/GroceryApp_1.PNG" width="500" height="500" >
+<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/2-Incremental%20Updates/GroceryApp_1.PNG" width="500" height="500" >
 
 
 ## Update 2 - Interface Design
