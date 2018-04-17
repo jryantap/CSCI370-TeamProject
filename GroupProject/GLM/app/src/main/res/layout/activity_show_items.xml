@@ -41,13 +41,13 @@
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="#A2AAB0"/>
 
+            ends here -->
+
     <ListView
         android:id="@+id/list_of_items"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"/>  -->
-
-        <!-- "cool" action button wideget -->
+        android:orientation="vertical"/>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/add_item"
