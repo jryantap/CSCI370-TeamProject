@@ -37,7 +37,7 @@
 
 ### 3.1 Class Diagram
 
-<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Grocery%20List%201.1.jpeg" width="500" height="500">
+<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/Grocery%20List%201.1.jpeg" width="500" height="500">
 
 ### 3.2 Other Diagrams
 
@@ -57,29 +57,28 @@
 5.  When the user closes the app, it should log the user off automatically to make the user's list more private and accessible to the user.  
 
 **NOTE:**  If the user clicks on the *Monthly List* button, same interface will be available and UI will look like from above design. 
+![alt text](https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/GroceryApp_1.PNG)
 
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/GroceryApp_1.PNG" width="500" height="500" >
 
 
 ## Update 2 - Interface Design
 1.  The team decided to remove user login screen.  It maybe implement for a future update of the app.
 2.  At app start-up user is taken to the Shopping List menu.  There is a a FAB (floating action button) on bottom right corner that the user can click.
 3.  When the user clicks on the FAB button, user is taken to the "Enter List Name" interface.  In this interface, the user can enter the list she/he wants to create.  When the user hits the check mark, the newly created list is saved in the system user it taken to another screen.
-3.  Included Activity Diagram update on how different android activities rely on each other. 
+4.  Included Activity Diagram update on how different android activities rely on each other. 
 
 <img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/ui.PNG">
 
-### Activity Diagram Update 1
-
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/classDiagram-1.png">
+## Activity Diagram Update 1
+<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/uml-1.png">
 
 ## Update 3 - Inteface Design
 1.  Dove more into UI design on adding lists will be implemented.  Mockups are created below.
 2.  Also update on different android activity dependencies.
+<img src= "https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/ui-2.PNG">
 
-<img src= >
-### Activity Digram Update 2
-<img src= >
+## Activity Digram Update 2
+<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/uml-2.png">
 
 
 
