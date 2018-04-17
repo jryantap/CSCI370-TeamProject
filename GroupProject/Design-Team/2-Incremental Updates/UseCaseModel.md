@@ -51,14 +51,12 @@
 				<ol>
 					<li>inform user that the name has been used</li>
 					<li>return to Normal Course step 3</li>
-				</ol>
-				
+				</ol>				
 				Ex2  The name the user enters contains a symbol<br>
 				<ol>
 					<li>informs user that there are no symbols in name of list</li>
 					<li>return Normal Course step 3</li>
-				</ol>
-				
+				</ol>				
 				Ex3 fail to create list
 				<ol>
 					<li>inform user that an error has occured</li>
