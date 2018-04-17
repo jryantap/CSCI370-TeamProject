@@ -38,7 +38,7 @@
 			<td>
 				<ol>
 					<li>The user opens the apps</li>
-					<li>The user chooses "+" button on the top right corner to create new list"</li>
+					<li>The user chooses "+" button on the top right corner to create new list</li>
 					<li>The user enters the name of the new list</li>
 					<li>The app acknowledges the list is created</li>
 					<li>The app redirects the user to the main page</li>
