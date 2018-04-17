@@ -12,9 +12,7 @@
 
 *Update 1*
 - Description of each activity should resemble as described in the [Design Document Template](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/DesignDocumentTemplate.md)
-- Main Activity:  provides user log-in for list access.
-	- *Entrance criteria*: user use keyboard to enter info.
-	- *Exit criteria*:  activity runs as intended when user enters correct info, activity switches to next.
+
 - Grocery Lists Activity:  User can choose between Weekly List and Monthly List.
 	- *Entrance criteria*: Navigated from main activity/log on screen.  In this activity, the user can choose between the two list mentioned above.  User can also decide return to previous screen if user chooses to do so.
 	- *Exit criteria*: activity runs as intended if user is navigated the next activity module.
