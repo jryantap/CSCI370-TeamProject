@@ -5,11 +5,13 @@ import android.content.res.TypedArray;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -17,17 +19,18 @@ import java.util.List;
 
 //list of item
 public class ItemList extends AppCompatActivity {
-    private int position;
+     int position;// position for list of list
     List<Item> itemList;
     ListView listView;
     itemAdapter itemAdapter;
-    int index;
+    int index;// position for item list
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
         Intent intent = getIntent();
         position = intent.getIntExtra("position",-1);
+        Log.d("reset?", "onCreate: "+position);
         setTitle(MainActivity.itemList.get(position).getListName());
         listView =(ListView) findViewById(R.id.itemList);
         initItems();
@@ -97,7 +100,7 @@ public class ItemList extends AppCompatActivity {
 
             case R.id.action_search:
                 Intent intent = new Intent(getApplicationContext(),Search.class);
-                intent.putExtra("position",index); //to find which list has been click
+                intent.putExtra("position",position); //to find which list has been click
                 startActivity(intent);
                 return true;
             case R.id.action_delList:

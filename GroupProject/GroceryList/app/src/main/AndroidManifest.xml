@@ -33,13 +33,12 @@
         </activity>
         <activity
             android:name=".Search"
-            android:label="Search" />
+            android:label="Search"
+>
+        </activity>
         <activity
             android:name=".Result"
-            android:parentActivityName=".Search">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Search" />
+>
         </activity>
         <activity
             android:name=".Pop"
@@ -47,7 +46,10 @@
         <activity
             android:name=".changeAmount"
             android:theme="@style/pop_up" />
-        <activity android:name=".createNew" />
+        <activity android:name=".createNew"
+            android:label="Create New item"
+>
+        </activity>
         <activity android:name=".addItem"
             android:theme="@style/pop_up" ></activity>
     </application>

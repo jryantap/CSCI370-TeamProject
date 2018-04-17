@@ -7,14 +7,24 @@ import java.util.ArrayList;
  */
 // class for grocery list
 public class LList {
+
+    private  int id;
     private String listName;
      boolean isSelected;
     public ArrayList<Item> itemList;
 
-    LList(String name,boolean isSelected){
+    LList(String name,int id){
         this.listName = name;
-        this.isSelected = isSelected;
+        this.isSelected = false;
         itemList = new ArrayList<Item>();
+        this.id = id;
+    }
+    public int getListID() {
+        return id;
+    }
+
+    public void setListID(int listID) {
+        this.id = listID;
     }
 
     public String getListName() {
