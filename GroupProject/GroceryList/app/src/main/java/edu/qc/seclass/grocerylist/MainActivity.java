@@ -64,13 +64,12 @@ public class MainActivity extends AppCompatActivity {
         while (i.hasNext()) {
             LList o = i.next();
             if(o.isSelected()) {
-                i.remove();
                 int listID = o.getListID();
                 boolean test= dataAccess.deleteList(listID);
-                if(!test){
-                    Toast.makeText(MainActivity.this,"fail to delete",Toast.LENGTH_LONG).show();
-                }
-                else
+                if(!test) {
+                    Toast.makeText(MainActivity.this, "fail to delete", Toast.LENGTH_LONG).show();
+                }else
+                    i.remove();
             }
         }
         ListAdapter.notifyDataSetChanged();

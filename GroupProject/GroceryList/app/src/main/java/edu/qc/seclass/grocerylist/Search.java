@@ -28,16 +28,17 @@ public class Search extends AppCompatActivity {
    List<type> typeList;
     ListView listView;
     searchAdapter searchAdapter;
-    int position;
+    int position;// for item list
+    DataAccess dataAccess;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+        dataAccess = DataAccess.getInstance(this);
         Intent intent = getIntent();
         position = intent.getIntExtra("position",-1);
-        Log.d("search", "onCreate: "+position);
         listView =(ListView) findViewById(R.id.searchList);
-        initItems();
+        typeList = dataAccess.getTypeList(position);
         searchAdapter =new searchAdapter(Search.this,typeList);
         listView.setAdapter(searchAdapter);
 
@@ -56,12 +57,21 @@ public class Search extends AppCompatActivity {
                     RadioButton radioButton = (RadioButton)
                             radioGroup.findViewById(buttonId);
                     String selectedtext = (String) radioButton.getText();
-
-                    Intent intent = new Intent(getApplicationContext(),Result.class);
-                    intent.putExtra("type",selectedtext); //to find which list has been click
-                    intent.putExtra("searchName",name);
-                    intent.putExtra("position",position);
-                    startActivity(intent);
+                    if(selectedtext.equals("Type")) {
+                        int typeID =dataAccess.getTypeID(name);
+                        Intent intent = new Intent(getApplicationContext(), Result.class);
+                        intent.putExtra("type", selectedtext); //to find which list has been click
+                        intent.putExtra("searchName", name);
+                        intent.putExtra("position", position);
+                        intent.putExtra("id",typeID);
+                        startActivity(intent);
+                    }else{
+                        Intent intent = new Intent(getApplicationContext(), Result.class);
+                        intent.putExtra("type", selectedtext); //to find which list has been click
+                        intent.putExtra("searchName", name);
+                        intent.putExtra("position", position);
+                        startActivity(intent);
+                    }
                 }
             }
         });
@@ -70,28 +80,17 @@ public class Search extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String s = typeList.get(i).getTypeName();
+                int typeID =typeList.get(i).getTypeId();
                 Intent intent = new Intent(getApplicationContext(),Result.class);
                 intent.putExtra("type","Type"); //to find which list has been click
                 intent.putExtra("searchName",s);
                 intent.putExtra("position",position);
+                intent.putExtra("id",typeID);
                 startActivity(intent);
             }
         });
     }
 
-    public void initItems(){
-        typeList = new ArrayList<type>();
-
-        TypedArray arrayText = getResources().obtainTypedArray(R.array.list);
-
-        for(int i=0; i<arrayText.length();i++){
-            String s = arrayText.getString(i);
-            type list = new type(s,1);
-            typeList.add(list);
-        }
-
-        arrayText.recycle();
-    }
 
 
     //back to preview page icon

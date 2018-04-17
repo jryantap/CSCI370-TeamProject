@@ -5,7 +5,15 @@ package edu.qc.seclass.grocerylist;
  */
 
 public class Item {
-    int id;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int id;
     public boolean isSelected;
     private String itemName;
     private String amount;

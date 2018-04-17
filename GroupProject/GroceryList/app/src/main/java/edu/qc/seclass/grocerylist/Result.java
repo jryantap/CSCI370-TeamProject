@@ -22,25 +22,32 @@ public class Result extends AppCompatActivity {
     resultAdapter resultAdapter;
     String type;
     String name;
+    int typeID;
     int index;// position for type list
     int position;//position for item list
-
+    DataAccess dataAccess;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 //        int result=0;
         super.onCreate(savedInstanceState);
+        dataAccess = DataAccess.getInstance(this);
         Intent intent = getIntent();
         type = intent.getStringExtra("type");
         name = intent.getStringExtra("searchName");
-        position = intent.getIntExtra("position",-1);
-//        if(result ==0) {
+        position = intent.getIntExtra("position", -1);
+        typeID = intent.getIntExtra("id", -1);
+        if (type.equals("Type"))
+            itemList = dataAccess.getitemTypeList(typeID);
+//        else
+//            itemList = dataAccess.getproductList(name);
+//        if (itemList.size() == 0) {
 //            setContentView(R.layout.result_not_found);
-//        }else {
-            setContentView(R.layout.activity_result);
+//        } else {
+//            setContentView(R.layout.activity_result);
 
             setTitle(name);
             listView = (ListView) findViewById(R.id.resultList);
-            initItems();
+
 
             resultAdapter = new resultAdapter(Result.this, itemList);
             listView.setAdapter(resultAdapter);
@@ -54,34 +61,21 @@ public class Result extends AppCompatActivity {
                 }
             });
 //        }
-        Button createNew = (Button) findViewById(R.id.CreateNewItem);
-        createNew.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), createNew.class);
-                intent.putExtra("position", position); //to find which list has been click
-                intent.putExtra("type",type);
-                intent.putExtra("searchName",name);
-                startActivity(intent);
+            Button createNew = (Button) findViewById(R.id.CreateNewItem);
+            createNew.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getApplicationContext(), createNew.class);
+                    intent.putExtra("position", position); //to find which list has been click
+                    intent.putExtra("type", type);
+                    intent.putExtra("searchName", name);
+                    startActivity(intent);
 
-            }
-        });
+                }
+            });
 
-    }
-
-    public void initItems(){
-        itemList = new ArrayList<Item>();
-
-        TypedArray arrayText = getResources().obtainTypedArray(R.array.product);
-
-        for(int i=0; i<arrayText.length();i++){
-            String s = arrayText.getString(i);
-            Item item = new Item(s,1,10);
-            itemList.add(item);
         }
-
-        arrayText.recycle();
-    }
+//    }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 2 && resultCode == RESULT_OK){

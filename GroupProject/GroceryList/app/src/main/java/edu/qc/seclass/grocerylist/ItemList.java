@@ -60,8 +60,15 @@ public class ItemList extends AppCompatActivity {
         Iterator<Item> i = itemList.iterator();
         while (i.hasNext()) {
             Item o = i.next();
-            if(o.isSelected())
-                i.remove();
+            if(o.isSelected()) {
+                int itemID = o.getId();
+                boolean test = dataAccess.deleteItem(itemID,position);
+                if (!test) {
+                    Toast.makeText(ItemList.this, "fail to delete", Toast.LENGTH_LONG).show();
+                } else
+                    i.remove();
+
+            }
         }
         itemAdapter.notifyDataSetChanged();
 
