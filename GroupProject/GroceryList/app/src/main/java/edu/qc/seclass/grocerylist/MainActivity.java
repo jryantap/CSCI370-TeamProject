@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(),ItemList.class);
-                intent.putExtra("position",i); //to find which list has been click
+                int id =  itemList.get(i).getListID();
+                intent.putExtra("position",id); //to find which list has been click
                 startActivity(intent);
             }
         });;
@@ -62,10 +63,18 @@ public class MainActivity extends AppCompatActivity {
         Iterator<LList> i = itemList.iterator();
         while (i.hasNext()) {
             LList o = i.next();
-            if(o.isSelected())
+            if(o.isSelected()) {
                 i.remove();
+                int listID = o.getListID();
+                boolean test= dataAccess.deleteList(listID);
+                if(!test){
+                    Toast.makeText(MainActivity.this,"fail to delete",Toast.LENGTH_LONG).show();
+                }
+                else
+            }
         }
         ListAdapter.notifyDataSetChanged();
+
 
     }
 

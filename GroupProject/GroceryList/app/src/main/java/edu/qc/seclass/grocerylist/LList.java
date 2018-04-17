@@ -44,12 +44,4 @@ public class LList {
     }
 
 
-    public void addItem(Item item){
-        boolean onList = false;
-        for(Item p : itemList){
-            if(p.getItemName().equals(item.getItemName()) && p.getType().equals((item.getType()))){
-                p.setAmount(item.getAmount());
-            }
-        }
-    }
 }

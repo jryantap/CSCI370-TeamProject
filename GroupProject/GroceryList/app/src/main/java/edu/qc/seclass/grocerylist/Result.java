@@ -27,16 +27,15 @@ public class Result extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        int result=0;
+//        int result=0;
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         type = intent.getStringExtra("type");
         name = intent.getStringExtra("searchName");
         position = intent.getIntExtra("position",-1);
-        Log.d("result", "onCreate: "+position);
-        if(result ==0) {
-            setContentView(R.layout.result_not_found);
-        }else {
+//        if(result ==0) {
+//            setContentView(R.layout.result_not_found);
+//        }else {
             setContentView(R.layout.activity_result);
 
             setTitle(name);
@@ -54,7 +53,7 @@ public class Result extends AppCompatActivity {
                     startActivityForResult(new Intent(getApplicationContext(), addItem.class), 2);
                 }
             });
-        }
+//        }
         Button createNew = (Button) findViewById(R.id.CreateNewItem);
         createNew.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,8 +76,7 @@ public class Result extends AppCompatActivity {
 
         for(int i=0; i<arrayText.length();i++){
             String s = arrayText.getString(i);
-            boolean b= false;
-            Item item = new Item(s,b,"food");
+            Item item = new Item(s,1,10);
             itemList.add(item);
         }
 

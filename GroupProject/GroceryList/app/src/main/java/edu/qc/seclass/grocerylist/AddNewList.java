@@ -16,12 +16,15 @@ import edu.qc.seclass.grocerylist.dbms;
 public class AddNewList extends AppCompatActivity {
 //    dbms mydb;
     private Button submitButton;
+    DataAccess dataAccess;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_list);
 //        mydb=new dbms(this);
+        //set up database
+        dataAccess = DataAccess.getInstance(this);
         submitButton =(Button) findViewById(R.id.submitButton);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,12 +36,11 @@ public class AddNewList extends AppCompatActivity {
                     Toast.makeText(AddNewList.this,"please enter a name",Toast.LENGTH_LONG).show();
                 }
                 else{
-//                    boolean test= mydb.insertList(name);
-//                    String t =""+test;
-//                    if(!test){
-//                        Toast.makeText(AddNewList.this,"Name is not inserted",Toast.LENGTH_LONG).show();
-//                    }
-//                    else{
+                    boolean test= dataAccess.insertList(name);
+                    if(!test){
+                        Toast.makeText(AddNewList.this,"Name is not inserted",Toast.LENGTH_LONG).show();
+                    }
+                    else{
                         Intent intent = new Intent();
                         intent.putExtra("ListName",name);
                         setResult(RESULT_OK,intent);
@@ -46,7 +48,7 @@ public class AddNewList extends AppCompatActivity {
                     }
                 }
 
-//            }
+            }
         });
     }
 

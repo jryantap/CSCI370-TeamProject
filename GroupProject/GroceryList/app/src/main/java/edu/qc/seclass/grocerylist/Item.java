@@ -5,19 +5,13 @@ package edu.qc.seclass.grocerylist;
  */
 
 public class Item {
+    int id;
     public boolean isSelected;
     private String itemName;
-    private String type;
     private String amount;
 
 
-    public String getType() {
-        return type;
-    }
 
-    public void setType(String type) {
-        this.type = type;
-    }
 
     public String getAmount() {
         return amount;
@@ -27,11 +21,12 @@ public class Item {
         this.amount = amount;
     }
 
-    Item(String itemName, boolean isSelected, String type) {
+    Item(String itemName,int id,int quantity) {
         this.itemName = itemName;
-        this.isSelected = isSelected;
-        this.type = type;
-        this.amount ="0.0";
+        this.isSelected = false;
+        String q = ""+quantity;
+        this.amount =q;
+        this.id = id;
 
 
     }

@@ -24,16 +24,17 @@ public class ItemList extends AppCompatActivity {
     ListView listView;
     itemAdapter itemAdapter;
     int index;// position for item list
+    DataAccess dataAccess;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
         Intent intent = getIntent();
         position = intent.getIntExtra("position",-1);
-        Log.d("reset?", "onCreate: "+position);
-        setTitle(MainActivity.itemList.get(position).getListName());
+        dataAccess = DataAccess.getInstance(this);
+        setTitle(MainActivity.itemList.get(position-1).getListName());
         listView =(ListView) findViewById(R.id.itemList);
-        initItems();
+        itemList = dataAccess.getitemList(position);
         itemAdapter = new itemAdapter(ItemList.this,itemList);
         listView.setAdapter(itemAdapter);
 
@@ -51,22 +52,6 @@ public class ItemList extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.item_list,menu);
         return true;
-    }
-
-    //read data
-    public void initItems(){
-        itemList = new ArrayList<Item>();
-
-        TypedArray arrayText = getResources().obtainTypedArray(R.array.product);
-
-        for(int i=0; i<arrayText.length();i++){
-            String s = arrayText.getString(i);
-            boolean b= false;
-            Item item = new Item(s,b,"food");
-            itemList.add(item);
-        }
-
-        arrayText.recycle();
     }
 
 
