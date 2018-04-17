@@ -5,11 +5,13 @@ import android.content.res.TypedArray;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -17,20 +19,22 @@ import java.util.List;
 
 //list of item
 public class ItemList extends AppCompatActivity {
-    private int position;
+     int position;// position for list of list
     List<Item> itemList;
     ListView listView;
     itemAdapter itemAdapter;
-    int index;
+    int index;// position for item list
+    DataAccess dataAccess;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
         Intent intent = getIntent();
         position = intent.getIntExtra("position",-1);
-        setTitle(MainActivity.itemList.get(position).getListName());
+        dataAccess = DataAccess.getInstance(this);
+        setTitle(MainActivity.itemList.get(position-1).getListName());
         listView =(ListView) findViewById(R.id.itemList);
-        initItems();
+        itemList = dataAccess.getitemList(position);
         itemAdapter = new itemAdapter(ItemList.this,itemList);
         listView.setAdapter(itemAdapter);
 
@@ -48,22 +52,6 @@ public class ItemList extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.item_list,menu);
         return true;
-    }
-
-    //read data
-    public void initItems(){
-        itemList = new ArrayList<Item>();
-
-        TypedArray arrayText = getResources().obtainTypedArray(R.array.product);
-
-        for(int i=0; i<arrayText.length();i++){
-            String s = arrayText.getString(i);
-            boolean b= false;
-            Item item = new Item(s,b,"food");
-            itemList.add(item);
-        }
-
-        arrayText.recycle();
     }
 
 
@@ -96,7 +84,9 @@ public class ItemList extends AppCompatActivity {
                 return true;
 
             case R.id.action_search:
-                startActivity(new Intent(this,Search.class));
+                Intent intent = new Intent(getApplicationContext(),Search.class);
+                intent.putExtra("position",position); //to find which list has been click
+                startActivity(intent);
                 return true;
             case R.id.action_delList:
                 startActivityForResult(new Intent(getApplicationContext(),Pop.class),3);// pop up confirm  window

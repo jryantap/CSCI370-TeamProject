@@ -4,30 +4,41 @@ import android.content.Intent;
 import android.content.res.TypedArray;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+//    dbms mydb;
     public static List<LList> itemList;
     ListView listView;
     AdapterList ListAdapter;
+    DataAccess dataAccess;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Log.d("main","1");
+//        mydb=new dbms(this);
         //set up the list layout
         listView =(ListView) findViewById(R.id.groceryList);
-        initItems();
+        //set up database
+        dataAccess = DataAccess.getInstance(this);
+        //open data base
+        dataAccess.open();
+        //read data from database
+        itemList = dataAccess.getMainList();
+
         ListAdapter = new AdapterList(MainActivity.this,itemList);
         listView.setAdapter(ListAdapter);
 
@@ -36,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(),ItemList.class);
-                intent.putExtra("position",i); //to find which list has been click
+                int id =  itemList.get(i).getListID();
+                intent.putExtra("position",id); //to find which list has been click
                 startActivity(intent);
             }
         });;
@@ -44,31 +56,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //read the data to list
-    public void initItems(){
-        itemList = new ArrayList<LList>();
 
-        TypedArray arrayText = getResources().obtainTypedArray(R.array.list);
-
-        for(int i=0; i<arrayText.length();i++){
-            String s = arrayText.getString(i);
-            boolean b= false;
-            LList list = new LList(s,b);
-            itemList.add(list);
-        }
-
-        arrayText.recycle();
-    }
 
     //delete list
-    public void detele(){
+    public void delete(){
         Iterator<LList> i = itemList.iterator();
         while (i.hasNext()) {
             LList o = i.next();
-            if(o.isSelected())
+            if(o.isSelected()) {
                 i.remove();
+                int listID = o.getListID();
+                boolean test= dataAccess.deleteList(listID);
+                if(!test){
+                    Toast.makeText(MainActivity.this,"fail to delete",Toast.LENGTH_LONG).show();
+                }
+                else
+            }
         }
         ListAdapter.notifyDataSetChanged();
+
 
     }
 
@@ -113,10 +119,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 2 && resultCode == RESULT_OK){
             String name=(String)data.getStringExtra("ListName");
-            itemList.add(new LList(name,false));
+            itemList.add(new LList(name,1));
+            ListAdapter.notifyDataSetChanged();
         }
         if(requestCode == 3 && resultCode == RESULT_OK){
-            detele();
+            delete();
         }
     }
 

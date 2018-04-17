@@ -3,8 +3,11 @@ package edu.qc.seclass.grocerylist;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
@@ -25,15 +28,19 @@ public class Search extends AppCompatActivity {
    List<type> typeList;
     ListView listView;
     searchAdapter searchAdapter;
-
+    int position;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+        Intent intent = getIntent();
+        position = intent.getIntExtra("position",-1);
+        Log.d("search", "onCreate: "+position);
         listView =(ListView) findViewById(R.id.searchList);
         initItems();
         searchAdapter =new searchAdapter(Search.this,typeList);
         listView.setAdapter(searchAdapter);
+
 
         Button search = (Button) findViewById(R.id.searchButton);
         search.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +60,7 @@ public class Search extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(),Result.class);
                     intent.putExtra("type",selectedtext); //to find which list has been click
                     intent.putExtra("searchName",name);
+                    intent.putExtra("position",position);
                     startActivity(intent);
                 }
             }
@@ -65,6 +73,7 @@ public class Search extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),Result.class);
                 intent.putExtra("type","Type"); //to find which list has been click
                 intent.putExtra("searchName",s);
+                intent.putExtra("position",position);
                 startActivity(intent);
             }
         });
@@ -82,5 +91,24 @@ public class Search extends AppCompatActivity {
         }
 
         arrayText.recycle();
+    }
+
+
+    //back to preview page icon
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.imageButton:
+                Intent intent = new Intent(Search.this,ItemList.class);
+                intent.putExtra("position",position);
+                startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    //button on action bar plug in
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.search_back,menu);
+        return true;
     }
 }

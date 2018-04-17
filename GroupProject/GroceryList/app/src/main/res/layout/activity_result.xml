@@ -17,7 +17,7 @@
            android:layout_alignParentStart="true"
            android:layout_alignParentTop="true"
            android:layout_marginStart="120dp"
-           android:text="CreateNewItem" />
+           android:text="Create New Item" />
    </RelativeLayout>
 
     <ListView
