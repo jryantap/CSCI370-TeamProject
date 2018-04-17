@@ -38,8 +38,8 @@
 			<td><b>Normal Course:</b></td>
 			<td>
 				<ol>
-					<li>The user opens app</li>
-					<li>The user clicks the floating action button</li>
+					<li>The user opens the apps</li>
+					<li>The user chooses "+" button on the top right corner to create new list</li>
 					<li>The user enters the name of the new list</li>
 					<li>The user clicks the check mark.
 					<li>The app acknowledges the list is created</li>
