@@ -27,19 +27,18 @@
 		</tr>
 		<tr>
 			<td><b>Pre-conditions:</b></td>
-			<td>The actor must logs into the apps</td>
+			<td>The actor must open the apps</td>
 		</tr>
 		<tr>
 			<td><b>Post-conditions:</b></td>
-			<td>New List is create</td>
+			<td>New List is created</td>
 		</tr>
 		<tr>
 			<td><b>Normal Course:</b></td>
 			<td>
 				<ol>
-					<li>The user logs into apps</li>
-					<li>The app authenticates the user</li>
-					<li>The user chooses "create new list"</li>
+					<li>The user opens the apps</li>
+					<li>The user chooses "+" button on the top right corner to create new list"</li>
 					<li>The user enters the name of the new list</li>
 					<li>The app acknowledges the list is created</li>
 					<li>The app redirects the user to the main page</li>
@@ -51,25 +50,19 @@
 			<td>Ex1 App determines if the name of the new list has been used
 				<ol>
 					<li>inform user that the name has been used</li>
-					<li>return to Normal Course step 4</li>
+					<li>return to Normal Course step 3</li>
 				</ol>
-				Ex2 user logs off
-				<ol>
-					<li>return to Normal Course step 1</li>
-				</ol>
-				Ex3  The name the user enters contains a symbol<br>
+				
+				Ex2  The name the user enters contains a symbol<br>
 				<ol>
 					<li>informs user that there are no symbols in name of list</li>
-					<li>return Normal Course step 4</li>
+					<li>return Normal Course step 3</li>
 				</ol>
-				Ex4 app fails to authenticate the user
-				<ol>
-					<li>inform user and redirect to log in page</li>
-				</ol>
-				Ex5 fail to create list
+				
+				Ex3 fail to create list
 				<ol>
 					<li>inform user that an error has occured</li>
-					<li>return Normal Course Step3</li>
+					<li>return Normal Course Step2</li>
 				</ol>
 			</td>
 		</tr>
