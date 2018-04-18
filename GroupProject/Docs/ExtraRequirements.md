@@ -3,6 +3,8 @@
 
 **Author**: Thom De Jesus
 
+Version 1.0
+
 ## 1 Non-functional Requirements
 
 * CPU & Memory:

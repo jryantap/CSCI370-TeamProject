@@ -4,7 +4,15 @@
 
 ******Author******:  Thom De Jesus, Thomas Chu
 
+Version 2.0
 
+Summary of Changes:
+
+Version 2.0:
+* Added notes to test cases that were no longer valid.
+* Revised test cases to reflect app implementation changes. (Removed login screen; Added floating action button)
+* Added test case TC18 implementing floating action button on main screen.
+* Added test case TC19 for deleting entire list(s).
 
 ## 1 Testing Strategy
 
@@ -91,4 +99,3 @@ The testing technology intended to be utilized in this project will mainly consi
 | TC17 | Error message on an invalid item number (count). | 1.  Have an Item | 1. Check the number of Item in the list | Item name = blah, Item number = a | Error message is displayed. | N/A | N/A | Thomas Chu | N/A | N/A | N/A | Android Studio | Test case not valid. Item number input not implemented.
 | TC18 | Floating action button successfully brings user to "Enter List Name" interface. | 1. App is open. | 1. Click on floating action button in right bottom corner. | N/A | User is brought to "Enter List Name" interface. | N/A | N/A | Thom De Jesus | N/A | N/A | N/A | Android Studio | N/A
 | TC19 | Successful deletion of a list. | 1. User has created a list. | 1. User selects "Delete List". <br> 2. User chooses a list or lists to delete. <br> 3. User confirms list(s) deletion. | List name = Grocery List | List named "Grocery List" is successfully deleted. | N/A | N/A | Thom De Jesus | N/A | N/A | N/A | Android Studio | N/A
-

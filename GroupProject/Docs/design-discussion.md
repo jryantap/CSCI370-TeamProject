@@ -1,5 +1,9 @@
 # Team 5 Design Discussion
 
+**Author**: Team 5
+
+Version 1.0
+
 ## Section 1: Individual Designs
 Design 1: [370Spring18 Etanyuah](https://github.com/qc-se-spring2018/370Spring18Team5/tree/master/GroupProject/Design-Individual/370Spring18%20Etanyauh)
 
@@ -135,6 +139,6 @@ typeID  | [ ] | [ ] | [ ] | [x] | [x] | [ ]
 addnewType() | [ ] | [ ] | [ ] | [ ] | [x] | [ ]
 
 ## Section 3: Summary
-As a group, we were able to communicate which individual design was appropriate for this assignment and chose "the best" one.  We looked into the different UML diagram submissions and pointed out some of the flaws and redundancies in each individual submission. Taking in to account the different perpectives of our members on how the grocery app should look like, we checked if the submissions met this assignment's requirements. The team decided to go with the pros and cons approach and made notes of them in this md file (written below each submission).  
+As a group, we were able to communicate which individual design was appropriate for this assignment and chose "the best" one.  We looked into the different UML diagram submissions and pointed out some of the flaws and redundancies in each individual submission. Taking in to account the different perspectives of our members on how the grocery app should look like, we checked if the submissions met this assignment's requirements. The team decided to go with the pros and cons approach and made notes of them in this md file (written below each submission).  
 
 Based on the different designs, the group agreed to use tchu's design foundation. Though it still lacked some objects and required editing, we worked together to achieve the final design which is embedded in this md file with a copy placed in the team's group folder.  
