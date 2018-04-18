@@ -9,7 +9,7 @@
 
 **1. GENERAL INFORMATION**  
 > 1.1 SYSTEM OVERVIEW  
-> 
+>
 **2. SYSTEM SUMMARY**
 >2.1 SYSTEM CONFIGURATION
 >
@@ -49,3 +49,4 @@ Clicking the "+" button brings the user to the "Create New List" screen.
 ##### 3.1.8 Rename List
 ##### 3.1.9 Delete List
 #### 3.3 Exit System
+To exit the app, the user will simply click the "x" located at the top right of the screen.
