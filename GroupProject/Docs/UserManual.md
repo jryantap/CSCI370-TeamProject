@@ -15,15 +15,15 @@
 >
 **3. GETTING STARTED**
 >3.1 SYSTEM MENU
->>3.1.1 MAIN INTERFACE
->>3.1.2 CREATE NEW LIST
->>3.1.3 ADD ITEM
->>3.1.4 DELETE ITEM
->>3.1.5 UPDATE QUANTITY
->>3.1.6 CHECK-OFF ITEM
->>3.1.7 CLEAR CHECK-OFF MARKS
->>3.1.8 RENAME LIST
->>3.1.9 DELETE LIST
+>>3.1.1 MAIN INTERFACE  
+>>3.1.2 CREATE NEW LIST  
+>>3.1.3 ADD ITEM  
+>>3.1.4 DELETE ITEM  
+>>3.1.5 UPDATE QUANTITY  
+>>3.1.6 CHECK-OFF ITEM  
+>>3.1.7 CLEAR CHECK-OFF MARKS  
+>>3.1.8 RENAME LIST  
+>>3.1.9 DELETE LIST  
 >
 >3.2 EXIT SYSTEM
 >
@@ -37,7 +37,7 @@ The Grocery List Manager app is designed for use on Android mobile devices. It i
 #### 3.1 System Menu
 Upon launching the app, users are presented with the main interface.
 ##### 3.1.1 Main Interface
-At the main interface, users can select an existing list or click on the "+" floating action button at the bottom right of the screen.
+At the main interface, users can select an existing list or click on the "+" at the top of the screen.
 Selecting an existing list opens the list and reveals its contents.
 Clicking the "+" button brings the user to the "Create New List" screen.
 ##### 3.1.2 Create New List
