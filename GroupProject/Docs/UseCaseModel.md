@@ -3,6 +3,14 @@
 
 **Author**: \<Sai Wai Li\>
 
+Version 2.0
+
+Summary of Changes:
+
+Version 2.0:
+- Removed use cases associated with user login.
+- Revised use cases to reflect app implementation changes. 
+
 ## 1 Use Case Diagram
 
 ![userCaseDiagram](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Use%20Case.jpg)
