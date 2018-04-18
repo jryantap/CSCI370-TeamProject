@@ -36,14 +36,26 @@ public class Result extends AppCompatActivity {
         name = intent.getStringExtra("searchName");
         position = intent.getIntExtra("position", -1);
         typeID = intent.getIntExtra("id", -1);
-        if (type.equals("Type"))
+        if (type.equals("Type")) {
             itemList = dataAccess.getitemTypeList(typeID);
-//        else
-//            itemList = dataAccess.getproductList(name);
-//        if (itemList.size() == 0) {
-//            setContentView(R.layout.result_not_found);
-//        } else {
-//            setContentView(R.layout.activity_result);
+        }else
+            itemList = dataAccess.getproductList(name);
+        if (itemList.size() == 0) {
+            setContentView(R.layout.result_not_found);
+            Button createNew = (Button) findViewById(R.id.CreateNewItem);
+            createNew.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getApplicationContext(), createNew.class);
+                    intent.putExtra("position", position); //to find which list has been click
+                    intent.putExtra("type", type);
+                    intent.putExtra("searchName", name);
+                    startActivity(intent);
+
+                }
+            });
+        } else {
+            setContentView(R.layout.activity_result);
 
             setTitle(name);
             listView = (ListView) findViewById(R.id.resultList);
@@ -60,7 +72,7 @@ public class Result extends AppCompatActivity {
                     startActivityForResult(new Intent(getApplicationContext(), addItem.class), 2);
                 }
             });
-//        }
+
             Button createNew = (Button) findViewById(R.id.CreateNewItem);
             createNew.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -70,12 +82,11 @@ public class Result extends AppCompatActivity {
                     intent.putExtra("type", type);
                     intent.putExtra("searchName", name);
                     startActivity(intent);
-
                 }
             });
-
         }
-//    }
+
+    }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 2 && resultCode == RESULT_OK){

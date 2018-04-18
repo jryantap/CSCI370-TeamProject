@@ -114,6 +114,22 @@ public class DataAccess {
         cursor.close();
         return list;
     }
+    public List<Item> getproductList(String name) {
+        List<Item> list = new ArrayList<>();
+        Cursor cursor = database.rawQuery("SELECT product_id,product_name FROM product_table where product_name like '%"+ name+ "%'" , null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            int id = cursor.getInt(0);
+            String productName = cursor.getString(1);
+
+            Item p = new Item(productName,id);
+            list.add(p);
+            cursor.moveToNext();
+        }
+        cursor.close();
+        return list;
+    }
+
 
     /**
      * list in result page where search by type
@@ -136,14 +152,50 @@ public class DataAccess {
         cursor.close();
         return list;
     }
+
+
+    /**
+     * action bar title in item list
+     * @param i
+     * @return
+     */
+    public String getListName(int i){
+        String name="";
+        Cursor cursor = database.rawQuery("SELECT list_name FROM list_table" +
+                "  WHERE list_id =" + i, null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            name = cursor.getString(0);
+            cursor.moveToNext();
+        }
+        cursor.close();
+
+        return name;
+
+    }
+
     /**
      * get type id fo rsearch page using search button
      */
     public int getTypeID(String name){
         int id=0;
         String low = name.toLowerCase();
-        Cursor cursor = database.rawQuery("SELECT * FROM type_table" +
-                " WHERE type_name =" + low, null);
+        Cursor cursor = database.rawQuery("SELECT type_id FROM type_table" +
+                "  WHERE type_name ='" + low+ "'", null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            id = cursor.getInt(0);
+            return id;
+        }
+        cursor.close();
+        return id;
+    }
+
+    public int getProductID(String name){
+        int id=0;
+        String low = name.toLowerCase();
+        Cursor cursor = database.rawQuery("SELECT product_id FROM product_table" +
+                "  WHERE product_name ='" + low+ "'", null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             id = cursor.getInt(0);
@@ -160,7 +212,7 @@ public class DataAccess {
      */
     public String getProductName(int i){
         Cursor cursor = database.rawQuery("SELECT product_name FROM product_table" +
-                                            "  WHERE product_id =" + i, null);
+                                            "  WHERE product_id = " + i, null);
         String name ="";
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
@@ -173,13 +225,28 @@ public class DataAccess {
         public boolean checkName(String name,String page){
         if(page.equals("main")){
             Cursor cursor = database.rawQuery("SELECT * FROM list_table" +
-                    "  WHERE list_name ="+ name, null);
+                    "  WHERE list_name ='"+ name +"'", null);
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
-                return false;
+                return true;
             }
             cursor.close();
-            return true;
+        }else if(page.equals("product")){
+            Cursor cursor = database.rawQuery("SELECT * FROM product_table" +
+                    "  WHERE product_name ='"+ name +"'", null);
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                return true;
+            }
+            cursor.close();
+        }else if(page.equals("type")){
+            Cursor cursor = database.rawQuery("SELECT * FROM type_table" +
+                    "  WHERE type_name ='"+ name +"'", null);
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                return true;
+            }
+            cursor.close();
         }
 
         return false;
@@ -200,6 +267,42 @@ public class DataAccess {
         }
         return false;
     }
+
+    public boolean insertNewItem(String name, String type, String quantity,int position){
+            long Tresult=-1;
+            boolean nExist =checkName(name,"product");
+            boolean tExist =checkName(name,"type");
+            if(nExist ) return false;
+            else{
+                if(!tExist) {
+                    ContentValues typeValues = new ContentValues();
+                    typeValues.put("type_name", name.toLowerCase());
+                     Tresult = database.insert("type_table", null, typeValues);
+
+                    if (Tresult == -1) return false;
+                }
+
+
+
+                ContentValues productValues = new ContentValues();
+                productValues.put("product_name", name.toLowerCase());
+                productValues.put("type_id",Tresult);
+                long result = database.insert("product_table", null, productValues);
+                if (result == -1) return false;
+                int product =getProductID(name);
+
+                ContentValues itemValues = new ContentValues();
+                itemValues.put("list_id", position);
+                itemValues.put("product_id",product);
+                itemValues.put("quantity",Integer.parseInt(quantity));
+                long Iresult = database.insert("item_table", null, itemValues);
+                if (Iresult == -1) return false;
+            }
+
+            return true;
+    }
+
+
 
     public boolean deleteList (int id) {
         return database.delete("list_table","list_id "+ " = " + id,null)>0;

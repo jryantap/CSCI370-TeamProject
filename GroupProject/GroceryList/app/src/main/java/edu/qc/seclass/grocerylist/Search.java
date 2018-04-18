@@ -59,6 +59,7 @@ public class Search extends AppCompatActivity {
                     String selectedtext = (String) radioButton.getText();
                     if(selectedtext.equals("Type")) {
                         int typeID =dataAccess.getTypeID(name);
+                        String t=""+typeID;
                         Intent intent = new Intent(getApplicationContext(), Result.class);
                         intent.putExtra("type", selectedtext); //to find which list has been click
                         intent.putExtra("searchName", name);

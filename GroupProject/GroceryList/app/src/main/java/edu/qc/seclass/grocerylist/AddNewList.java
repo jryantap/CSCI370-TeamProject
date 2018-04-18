@@ -14,7 +14,7 @@ import edu.qc.seclass.grocerylist.dbms;
 
 //page for add new list
 public class AddNewList extends AppCompatActivity {
-//    dbms mydb;
+
     private Button submitButton;
     DataAccess dataAccess;
 
@@ -22,7 +22,6 @@ public class AddNewList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_list);
-//        mydb=new dbms(this);
         //set up database
         dataAccess = DataAccess.getInstance(this);
         submitButton =(Button) findViewById(R.id.submitButton);
@@ -38,7 +37,7 @@ public class AddNewList extends AppCompatActivity {
                 else{
                     boolean test= dataAccess.insertList(name);
                     if(!test){
-                        Toast.makeText(AddNewList.this,"Name is not inserted",Toast.LENGTH_LONG).show();
+                        Toast.makeText(AddNewList.this,"List not created or name has been used",Toast.LENGTH_LONG).show();
                     }
                     else{
                         Intent intent = new Intent();

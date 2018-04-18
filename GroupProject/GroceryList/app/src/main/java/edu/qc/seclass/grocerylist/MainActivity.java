@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(),ItemList.class);
                 int id =  itemList.get(i).getListID();
                 intent.putExtra("position",id); //to find which list has been click
+
                 startActivity(intent);
             }
         });;

@@ -39,6 +39,13 @@ public class Item {
 
     }
 
+    Item(String itemName,int id){
+        this.itemName = itemName;
+        this.isSelected =false;
+        this.amount="0";
+        this.id=id;
+    }
+
     public boolean isSelected() {
         return isSelected;
     }

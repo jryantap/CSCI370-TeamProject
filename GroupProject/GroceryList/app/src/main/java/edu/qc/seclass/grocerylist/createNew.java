@@ -15,10 +15,12 @@ public class createNew extends AppCompatActivity {
     private int index;
     private String tName;
     private String name;
+    DataAccess dataAccess;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new);
+        dataAccess = DataAccess.getInstance(this);
         Intent intent = getIntent();
         index = intent.getIntExtra("position",-1);
         tName = intent.getStringExtra("type");
@@ -37,10 +39,15 @@ public class createNew extends AppCompatActivity {
                 if(itemName.equals("") || typeName.equals("") || amount.equals("")){
                     Toast.makeText(createNew.this,"please enter all information",Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(createNew.this,"item is add to list and database",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(getApplicationContext(),Search.class);
-                    intent.putExtra("position",index); //to find which list has been click
-                    startActivity(intent);
+                    boolean test= dataAccess.insertNewItem(itemName,typeName,amount,index);
+                    if(!test){
+                        Toast.makeText(createNew.this,"New item not added",Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        Intent intent = new Intent(getApplicationContext(), Search.class);
+                        intent.putExtra("position", index); //to find which list has been click
+                        startActivity(intent);
+                    }
 
                 }
             }

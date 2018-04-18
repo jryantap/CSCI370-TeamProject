@@ -32,7 +32,7 @@ public class ItemList extends AppCompatActivity {
         Intent intent = getIntent();
         position = intent.getIntExtra("position",-1);
         dataAccess = DataAccess.getInstance(this);
-        setTitle(MainActivity.itemList.get(position-1).getListName());
+        setTitle(dataAccess.getListName(position));
         listView =(ListView) findViewById(R.id.itemList);
         itemList = dataAccess.getitemList(position);
         itemAdapter = new itemAdapter(ItemList.this,itemList);
