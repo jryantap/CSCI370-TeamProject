@@ -1,7 +1,8 @@
 
 # Use Case Model
 
-**Author**: \<Sai Wai Li\>
+**Author**: Sai Wai Li  
+Edited by: Thom De Jesus
 
 Version 2.0
 
