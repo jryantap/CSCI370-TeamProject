@@ -13,7 +13,7 @@ Version 2.0:
 
 ## 1 Use Case Diagram
 
-![userCaseDiagram](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Design-Team/Use%20Case.jpg)
+![userCaseDiagram](https://github.com/qc-se-spring2018/370Spring18Team5/blob/master/GroupProject/Docs/Use%20Case.jpg)
 
 ## 2 Use Case Descriptions
 
@@ -147,74 +147,6 @@ Version 2.0:
 					<li>Return to Normal Course Step 1</li>
 				</ol>
 				Ex3: User fails to delete list
-				<ol>
-					<li>Inform user that an error has occurred</li>
-					<li>Return to Normal Course Step 3</li>
-				</ol>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<!-- 3 -->
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="3"><b>Rename List</b></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>Brief description:</b></td>
-			<td>The Actor renames a List</td>
-		</tr>
-		<tr>
-			<td><b>Actor:</b></td>
-			<td>User</td>
-		</tr>
-		<tr>
-			<td><b>Pre-conditions:</b></td>
-			<td>
-				<ol>
-					<li>The user opens the app</li>
-					<li>The List must be created</li>
-				</ol>
-			</td>
-		</tr>
-		<tr>
-			<td><b>Post-conditions:</b></td>
-			<td>List is renamed</td>
-		</tr>
-		<tr>
-			<td><b>Normal Course:</b></td>
-			<td>
-				<ol>
-					<li>The user opens the app</li>
-					<li>The user selects a list</li>
-					<li>The user selects the name of the list and renames it</li>
-					<li>The app acknowledges that the list has been renamed</li>
-					<li>The app redirects user to main page</li>
-				</ol>
-			</td>
-		</tr>
-		<tr>
-			<td><b>Exception</b></td>
-			<td>Ex1: App determines the new name of the list has been used
-				<ol>
-					<li>Inform user that the name has been used</li>
-					<li>Return to Normal Course step 3</li>
-				</ol>
-				Ex2: User closes app
-				<ol>
-					<li>Return to Normal Course Step 1</li>
-				</ol>
-				Ex3: The name user enters contains symbols<br>
-				<ol>
-					<li>Inform user that symbols are not allowed</li>
-					<li>Return to Normal Course Step 3</li>
-				</ol>
-				Ex4: The user fails to rename the list
 				<ol>
 					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 3</li>
@@ -407,122 +339,6 @@ Version 2.0:
 					<li>Return to Normal Course Step 4</li>
 				</ol>
 				Ex4: Fail to change quantity of item
-				<ol>
-					<li>Inform user that an error has occurred</li>
-					<li>Return to Normal Course Step 3</li>
-				</ol>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<!-- 7 -->
-<table>
-	<thead>
-		<tr>
-			<th colspan="3"><b>Clear List</b></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>Brief description:</b></td>
-			<td>The user removes all items in the List</td>
-		</tr>
-		<tr>
-			<td><b>Actor:</b></td>
-			<td>User</td>
-		</tr>
-		<tr>
-			<td><b>Pre-conditions:</b></td>
-			<td>
-				<ol>
-					<li>The user must open the app</li>
-					<li>The List must be created</li>
-				</ol>
-			</td>
-		</tr>
-		<tr>
-			<td><b>Post-conditions:</b></td>
-			<td>The list is empty</td>
-		</tr>
-		<tr>
-			<td><b>Normal Course:</b></td>
-			<td>
-				<ol>
-					<li>The user opens the app</li>
-					<li>The user selects a list</li>
-					<li>The user chooses "Clear List"</li>
-					<li>The app prompts user to comfirm</li>
-					<li>The app acknowledges the list has been cleared</li>
-					<li>The app redirects user to the item list page</li>
-				</ol>
-			</td>
-		</tr>
-		<tr>
-			<td><b>Exception</b></td>
-			<td>
-				Ex1: User closes app
-				<ol>
-					<li>Return to Normal Course Step 1</li>
-				</ol>
-				Ex2: Fail to clear list
-				<ol>
-					<li>Inform user that an error has occurred</li>
-					<li>Return to Normal Course Step 2</li>
-				</ol>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<!-- 8 -->
-<table>
-	<thead>
-		<tr>
-			<th colspan="3"><b>Modify List</b></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>Brief description:</b></td>
-			<td>The user changes the order of the list</td>
-		</tr>
-		<tr>
-			<td><b>Actor:</b></td>
-			<td>User</td>
-		</tr>
-		<tr>
-			<td><b>Pre-conditions:</b></td>
-			<td>
-				<ol>
-					<li>The user must open the app</li>
-					<li>There must be at least two lists</li>
-				</ol>
-			</td>
-		</tr>
-		<tr>
-			<td><b>Post-conditions:</b></td>
-			<td>Order of list changes</td>
-		</tr>
-		<tr>
-			<td><b>Normal Course:</b></td>
-			<td>
-				<ol>
-					<li>The user opens the app</li>
-					<li>The user choose "Modify List"</li>
-					<li>The user selects two lists</li>
-					<li>The app prompts user to comfirm</li>
-					<li>The app acknowledges order of list has been changed</li>
-					<li>The app redirects user to the list page</li>
-				</ol>
-			</td>
-		</tr>
-		<tr>
-			<td><b>Exception</b></td>
-			<td>
-				Ex1: User closes app
-				<ol>
-					<li>Return to Normal Course Step 1</li>
-				</ol>
-				Ex2: Lists do not swap
 				<ol>
 					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 3</li>
