@@ -4,9 +4,12 @@
 
 ******Author******:  Thom De Jesus, Thomas Chu
 
-Version 2.0
+Version 3.0
 
 Summary of Changes:
+
+Version 3.0
+* Unable to implement necessary test cases for deliverable 4 due to time constraints. Still require more test cases along with revisions to existing test cases to reflect deliverable 4 changes.
 
 Version 2.0:
 * Added notes to test cases that were no longer valid.
