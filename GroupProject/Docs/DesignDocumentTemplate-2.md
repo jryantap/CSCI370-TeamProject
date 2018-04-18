@@ -68,6 +68,6 @@
 
 ### Usage:
 
-
+![usage](https://i.imgur.com/L5UtOXc.gif)
 
 
