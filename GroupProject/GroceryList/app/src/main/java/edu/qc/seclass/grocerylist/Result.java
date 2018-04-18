@@ -12,6 +12,7 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +39,9 @@ public class Result extends AppCompatActivity {
         typeID = intent.getIntExtra("id", -1);
         if (type.equals("Type")) {
             itemList = dataAccess.getitemTypeList(typeID);
-        }else
+        }else {
             itemList = dataAccess.getproductList(name);
+        }
         if (itemList.size() == 0) {
             setContentView(R.layout.result_not_found);
             Button createNew = (Button) findViewById(R.id.CreateNewItem);
@@ -90,18 +92,17 @@ public class Result extends AppCompatActivity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 2 && resultCode == RESULT_OK){
+            Item p = itemList.get(index);
+            int itemID = p.getId();
+            String amount=(String)data.getStringExtra("amount");
+            boolean result = dataAccess.inserItem(position,itemID,amount);
+            if(!result){
+                Toast.makeText(Result.this,"item may already in list",Toast.LENGTH_LONG).show();
+            }
+
         }
     }
-//
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch(item.getItemId()){
-//            case R.id.home:
-//                Intent intent = new Intent(getApplicationContext(),ItemList.class);
-//                intent.putExtra("position",position);
-//                startActivity(intent);
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+
 
     //back to preview page icon
     public boolean onOptionsItemSelected(MenuItem item) {

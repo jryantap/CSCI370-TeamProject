@@ -8,7 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 
-//pop up window for delete item or list
+/**
+ * pop up window for delete item or list
+ */
+
 public class Pop extends Activity {
 
     @Override
@@ -19,9 +22,11 @@ public class Pop extends Activity {
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
+        //get the screen size
         int width=dm.widthPixels;
         int height=dm.heightPixels;
 
+        //set the size of pop up window
         getWindow().setLayout((int)(width*0.8), (int)(height*0.3));
         Button yes = (Button) findViewById(R.id.yesButton);
         Button no = (Button) findViewById(R.id.noButton);

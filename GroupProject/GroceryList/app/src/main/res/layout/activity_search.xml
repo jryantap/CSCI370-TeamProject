@@ -32,39 +32,6 @@
             android:text="Search"
             app:layout_constraintStart_toEndOf="@+id/search"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <RadioGroup
-            android:id="@+id/searchType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/search"
-            android:layout_centerHorizontal="true"
-            android:orientation="horizontal">
-
-
-            <RadioButton
-                android:id="@+id/type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/search"
-                android:layout_marginStart="24dp"
-                android:layout_toEndOf="@+id/nameButton"
-                android:text="Type"
-                android:checked="true"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/search" />
-
-            <RadioButton
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/search"
-                android:layout_below="@+id/search"
-                android:layout_marginStart="16dp"
-                android:text="Name"
-                app:layout_constraintStart_toEndOf="@+id/typeButton"
-                app:layout_constraintTop_toBottomOf="@+id/search" />
-        </RadioGroup>
     </RelativeLayout>
     <ListView
         android:id="@+id/searchList"

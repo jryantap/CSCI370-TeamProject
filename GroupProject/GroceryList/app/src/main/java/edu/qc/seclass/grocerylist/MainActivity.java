@@ -17,7 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-//    dbms mydb;
+
     public static List<LList> itemList;
     ListView listView;
     AdapterList ListAdapter;
@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("main","1");
-//        mydb=new dbms(this);
         //set up the list layout
         listView =(ListView) findViewById(R.id.groceryList);
         //set up database

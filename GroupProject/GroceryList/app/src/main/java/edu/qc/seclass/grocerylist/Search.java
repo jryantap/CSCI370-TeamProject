@@ -51,31 +51,18 @@ public class Search extends AppCompatActivity {
                 String name = search.getText().toString();
                 if(name.equals("")){
                     Toast.makeText(getApplicationContext(),"Please enter a name of product or type", Toast.LENGTH_LONG).show();
-                }else {
-                    RadioGroup radioGroup = (RadioGroup) findViewById(R.id.searchType);
-                    int buttonId = radioGroup.getCheckedRadioButtonId();
-                    RadioButton radioButton = (RadioButton)
-                            radioGroup.findViewById(buttonId);
-                    String selectedtext = (String) radioButton.getText();
-                    if(selectedtext.equals("Type")) {
-                        int typeID =dataAccess.getTypeID(name);
-                        String t=""+typeID;
-                        Intent intent = new Intent(getApplicationContext(), Result.class);
-                        intent.putExtra("type", selectedtext); //to find which list has been click
-                        intent.putExtra("searchName", name);
-                        intent.putExtra("position", position);
-                        intent.putExtra("id",typeID);
-                        startActivity(intent);
-                    }else{
-                        Intent intent = new Intent(getApplicationContext(), Result.class);
-                        intent.putExtra("type", selectedtext); //to find which list has been click
-                        intent.putExtra("searchName", name);
-                        intent.putExtra("position", position);
-                        startActivity(intent);
-                    }
                 }
+
+                        Intent intent = new Intent(getApplicationContext(), Result.class);
+                        intent.putExtra("type", "name"); //to find which list has been click
+                        intent.putExtra("searchName", name);
+                        intent.putExtra("position", position);
+                        startActivity(intent);
+//                    }
+//                }
             }
         });
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

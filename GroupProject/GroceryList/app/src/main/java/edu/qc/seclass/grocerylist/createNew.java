@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * class for create new item to database and item list
+ */
 public class createNew extends AppCompatActivity {
     private int index;
     private String tName;
@@ -25,7 +28,6 @@ public class createNew extends AppCompatActivity {
         index = intent.getIntExtra("position",-1);
         tName = intent.getStringExtra("type");
         name = intent.getStringExtra("searchName");
-        Log.d("create", "onCreate: "+index);
         Button submitButton =(Button) findViewById(R.id.createbutton);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override

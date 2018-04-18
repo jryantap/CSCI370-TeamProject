@@ -109,9 +109,17 @@ public class ItemList extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == 4 && resultCode == RESULT_OK){
             Item p = itemList.get(index);
+            int itemID = p.getId();
             String amount=(String)data.getStringExtra("amount");
-            p.setAmount(amount);
-            itemAdapter.notifyDataSetChanged();;
+            Double num=Double.parseDouble(amount);
+           int result = dataAccess.changeAmount(position,itemID,num);
+            String t=""+result;
+            Log.d("result for quantity",t);
+            if(result != 0) {
+                p.setAmount(amount);
+                itemAdapter.notifyDataSetChanged();
+            }else
+            if(result == -1) Toast.makeText(ItemList.this,"cannot change quantity",Toast.LENGTH_LONG).show();
         }
         if(requestCode == 3 && resultCode == RESULT_OK){
             detele();

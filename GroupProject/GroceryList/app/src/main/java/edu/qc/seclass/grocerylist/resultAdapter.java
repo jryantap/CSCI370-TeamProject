@@ -14,6 +14,10 @@ import java.util.List;
  * Created by sam on 4/16/2018.
  */
 
+/**
+ * adapter for result class list view
+ */
+
 public class resultAdapter extends BaseAdapter{
     private List<Item> itemList;
     private Context context;

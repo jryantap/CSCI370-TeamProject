@@ -17,7 +17,10 @@ import java.util.List;
 /**
  * Created by sam on 4/12/2018.
  */
-// adapter for main Activity list
+
+/**
+ * // adapter for main Activity list
+ */
 public class AdapterList extends BaseAdapter {
     private List<LList> itemList;
     private Context context;

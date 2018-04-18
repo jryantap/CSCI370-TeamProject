@@ -138,7 +138,7 @@ public class DataAccess {
      */
     public List<Item> getitemTypeList(int i) {
         List<Item> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT product_id,product_name FROM product_table " +
+        Cursor cursor = database.rawQuery("SELECT product_id, product_name FROM product_table " +
                                                 "where type_id =" + i, null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
@@ -175,21 +175,21 @@ public class DataAccess {
     }
 
     /**
-     * get type id fo rsearch page using search button
+     * get type id fo search page using search button
      */
-    public int getTypeID(String name){
-        int id=0;
-        String low = name.toLowerCase();
-        Cursor cursor = database.rawQuery("SELECT type_id FROM type_table" +
-                "  WHERE type_name ='" + low+ "'", null);
-        cursor.moveToFirst();
-        while (!cursor.isAfterLast()) {
-            id = cursor.getInt(0);
-            return id;
-        }
-        cursor.close();
-        return id;
-    }
+//    public int getTypeID(String name){
+//        int id=0;
+//        String low = name.toLowerCase();
+//        Cursor cursor = database.rawQuery("SELECT type_id FROM type_table" +
+//                "  WHERE type_name ='" + low+ "'", null);
+//        cursor.moveToFirst();
+//        while (!cursor.isAfterLast()) {
+//            id = cursor.getInt(0);
+//            return id;
+//        }
+//        cursor.close();
+//        return id;
+//    }
 
     public int getProductID(String name){
         int id=0;
@@ -228,6 +228,7 @@ public class DataAccess {
                     "  WHERE list_name ='"+ name +"'", null);
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
+                cursor.close();
                 return true;
             }
             cursor.close();
@@ -236,6 +237,7 @@ public class DataAccess {
                     "  WHERE product_name ='"+ name +"'", null);
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
+                cursor.close();
                 return true;
             }
             cursor.close();
@@ -244,12 +246,26 @@ public class DataAccess {
                     "  WHERE type_name ='"+ name +"'", null);
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
+                cursor.close();
                 return true;
             }
             cursor.close();
         }
 
         return false;
+        }
+
+        public boolean check(int list, int item){
+            Cursor cursor = database.rawQuery("SELECT * FROM item_table" +
+                    "  WHERE list_id ="+ list +" AND product_id = "+item, null);
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                cursor.close();
+                return true;
+            }
+            cursor.close();
+
+            return false;
         }
 
 
@@ -266,6 +282,25 @@ public class DataAccess {
                 return true;
         }
         return false;
+    }
+
+    public boolean inserItem(int list,int item, String quantity ){
+            boolean exist = check(list,item);
+
+            if(!exist){
+                ContentValues contentValues = new ContentValues();
+                contentValues.put("list_id", list);
+                contentValues.put("product_id", item);
+                contentValues.put("quantity",Double.parseDouble(quantity));
+                long result = database.insert("item_table", null, contentValues);
+
+                if (result == -1)
+                    return false;
+                else
+                    return true;
+            }
+        return false;
+
     }
 
     public boolean insertNewItem(String name, String type, String quantity,int position){
@@ -294,7 +329,7 @@ public class DataAccess {
                 ContentValues itemValues = new ContentValues();
                 itemValues.put("list_id", position);
                 itemValues.put("product_id",product);
-                itemValues.put("quantity",Integer.parseInt(quantity));
+                itemValues.put("quantity",Double.parseDouble(quantity));
                 long Iresult = database.insert("item_table", null, itemValues);
                 if (Iresult == -1) return false;
             }
@@ -310,5 +345,25 @@ public class DataAccess {
 
     public boolean deleteItem (int id,int position) {
         return database.delete("item_table","list_id  = " + position +" AND product_id = "+id,null)>0;
+    }
+
+    public int changeAmount(int position, int itemID, Double quantity){
+        int result=-1;
+        ContentValues cv = new ContentValues();
+        cv.put("quantity",quantity);
+        String t=""+position;
+        String s =""+itemID;
+
+        result = database.update("item_table",cv,"list_id =? AND product_id =?",new String[]{t,s});
+//        String filter = "list_id ="+ position+ " AND item_id ="+itemID;
+//         result =database.update("item_table",cv,filter,null);
+        return result;
+
+//        String query="UPDATE item_table " +
+//                "SET quantity =" + quantity +
+//                " WHERE list_id =" + position +
+//                " AND item_id =" +itemID;
+//        database.execSQL(query);
+
     }
 }

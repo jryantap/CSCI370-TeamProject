@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/**
+ * a pop up window in result page for adding item in result page
+ */
 public class addItem extends AppCompatActivity {
 
     @Override
@@ -31,6 +34,7 @@ public class addItem extends AppCompatActivity {
                 EditText amount = (EditText) findViewById(R.id.amount);
                 String quantity = amount.getText().toString();
                 Intent intent = new Intent();
+                intent.putExtra("amount",quantity);
                 setResult(RESULT_OK,intent);
                 finish();;
             }

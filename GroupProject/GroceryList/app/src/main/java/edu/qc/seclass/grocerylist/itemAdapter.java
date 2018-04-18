@@ -15,7 +15,10 @@ import java.util.List;
  * Created by sam on 4/14/2018.
  */
 
-//adapter for item list
+/**
+ * adapter for item list page
+ */
+
 public class itemAdapter extends BaseAdapter {
     private List<Item> itemList;
     private Context context;

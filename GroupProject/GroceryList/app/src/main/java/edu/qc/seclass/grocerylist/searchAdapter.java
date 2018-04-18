@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
+ * adapter for search page list view
  * Created by sam on 4/16/2018.
  */
 
