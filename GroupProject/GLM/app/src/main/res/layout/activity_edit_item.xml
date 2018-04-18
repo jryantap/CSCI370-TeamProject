@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".Activities.EditItemActivity">
+
+    <!-- Item name container -->
+    <LinearLayout
+        android:id="@+id/container_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/edit_item_name"
+            style="@style/CategoryStyle" />
+
+        <!-- Name field -->
+        <EditText
+            android:id="@+id/edit_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_item_name"
+            android:inputType="textCapWords"
+            style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+
+
+
+
+    <!-- Item category container-->
+    <LinearLayout
+        android:id="@+id/container_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/edit_category"
+            style="@style/CategoryStyle" />
+
+        <!-- Input field -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <!-- Gender drop-down spinner -->
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_height="48dp"
+                android:layout_width="wrap_content"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Quantity container -->
+    <LinearLayout
+        android:id="@+id/container_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/edit_quantity"
+            style="@style/CategoryStyle" />
+
+        <!-- Input field -->
+        <EditText
+            android:id="@+id/edit_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_quantity"
+            android:inputType="number"
+            style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+
+    <!-- Price container -->
+    <LinearLayout
+        android:id="@+id/container_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/edit_price"
+            style="@style/CategoryStyle" />
+
+        <!-- Input field -->
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_price"
+            android:inputType="numberDecimal"
+            style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="SAVE"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/edit_item_button_shape"
+            android:onClick="saveItem"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Delete from this list"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/edit_item_button_shape"
+            android:layout_marginTop="25dp"
+            android:onClick="deleteItem"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Delete Permanently"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/edit_item_button_shape"
+            android:layout_marginTop="25dp"
+            android:onClick="deleteItemPermanently"/>
+
+    </LinearLayout>>
+
+
+</LinearLayout>

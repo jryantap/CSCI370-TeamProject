@@ -37,18 +37,18 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         });
 
         //find the List view which will be populated with this list data
-        ListView shopplingListView = (ListView) findViewById(R.id.list);
+        ListView shoppingListView = (ListView) findViewById(R.id.list);
 
         //when the list has 0 items, use this view
         View emptyView = findViewById(R.id.empty_view);
-        shopplingListView.setEmptyView(emptyView);
+        shoppingListView.setEmptyView(emptyView);
 
         //use this adapter to populate the shoppingListView
         //reference:  https://github.com/codepath/android_guides/wiki/Populating-a-ListView-with-a-CursorAdapter
         shoppingListCursorAdapter = new ShoppingListCursorAdapter(this, null);
-        shopplingListView.setAdapter(shoppingListCursorAdapter);
+        shoppingListView.setAdapter(shoppingListCursorAdapter);
 
-        shopplingListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        shoppingListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 

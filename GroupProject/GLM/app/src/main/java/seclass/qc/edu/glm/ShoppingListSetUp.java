@@ -20,6 +20,7 @@ public class ShoppingListSetUp {
     public static String authority_content = "seclass.qc.edu.glm";
     public static String shopping_list_path = "shopping list";
     public static Uri content_base_uri = Uri.parse("content://" + authority_content);
+    public static String CONTENT_AUTHORITY = "seclass.qc.edu.glm";
 
 //    public class ShopList {
 //        public static final String TABLE_NAME = "shoppinglist";

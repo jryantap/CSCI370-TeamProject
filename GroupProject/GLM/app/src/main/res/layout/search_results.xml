@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="10dp"
+    android:id="@+id/searched_item_info_container">
+
+    <TextView
+        android:id="@+id/add_item_plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_item_button_selector"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:text="+"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/search_item_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        tools:text="Milk"
+        android:textSize="25dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center_vertical"
+        android:textColor="#2B3D4D"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/remove_item_cross_button"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:text="x"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible" />
+
+</LinearLayout>

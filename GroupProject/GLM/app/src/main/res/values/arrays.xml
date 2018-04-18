@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These are the options displayed in the gender drop-down Spinner -->
+    <string-array name="array_category_options">
+        <item>@string/category_produce</item>
+        <item>@string/category_dairy</item>
+        <item>@string/category_meat</item>
+        <item>@string/category_bakery</item>
+        <item>@string/category_beverages</item>
+        <item>@string/category_snacks</item>
+        <item>@string/category_frozen</item>
+        <item>@string/category_personal_care</item>
+        <item>@string/category_cleaning</item>
+        <item>@string/category_grains</item>
+        <item>@string/category_sauces</item>
+        <item>@string/category_coffee</item>
+        <item>@string/category_other</item>
+    </string-array>
+</resources>

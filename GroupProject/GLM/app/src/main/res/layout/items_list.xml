@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="0dp"
+    android:id="@+id/item_info_container">
+
+    <TextView
+        android:id="@+id/item_color_text_view"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        tools:text=""
+        android:textSize="25dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center_vertical"
+        android:textColor="#2B3D4D"/>
+
+    <CheckBox
+        android:id="@+id/item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:focusable="false"
+        android:onClick="checkBoxHandler"/>
+
+    <TextView
+        android:id="@+id/item_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        tools:text="Milk"
+        android:textSize="25dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center_vertical"
+        android:textColor="#2B3D4D"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/item_quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="15 x "
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorGrey" />
+
+
+    <TextView
+        android:id="@+id/item_price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="$124.99"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorGrey"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

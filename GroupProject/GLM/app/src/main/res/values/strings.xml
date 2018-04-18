@@ -2,6 +2,7 @@
     <!-- app name -->
     <string name="app_name">GLM</string>
 
+    <!-- for xml -->
     <!-- Title text for the empty view, which describes the empty catalog image -->
     <string name="item_empty_view_title_text">Add your first item to the list</string>
 
@@ -14,4 +15,88 @@
     <!-- Subtitle text for the empty view that prompts the user to add a list  -->
     <string name="list_empty_view_subtitle_text">by pressing the plus button</string>
 
+    <!--Toast Messages -->
+    <!-- Toast message in editor when current list has failed to be deleted -->
+    <string name="delete_list_failed">Error with deleting list</string>
+    <!-- Toast message in editor when current list was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="delete_list_successful">List deleted</string>
+
+    <string name="hint_item_name">Item Name</string>
+
+    <!-- Label for menu option to save a list or item-->
+    <string name="action_save">Save</string>
+
+    <string name="edit_item_name">Item Name</string>
+
+
+    <string name="category_produce">Produce</string>
+    <string name="category_dairy">Dairy</string>
+    <string name="category_meat">Meat</string>
+    <string name="category_bakery">Bakery</string>
+    <string name="category_beverages">Beverages</string>
+    <string name="category_snacks">Snacks</string>
+    <string name="category_frozen">Frozen</string>
+    <string name="category_personal_care">Personal Care</string>
+    <string name="category_cleaning">Cleaning</string>
+    <string name="category_grains">Grains</string>
+    <string name="category_sauces">Sauces</string>
+    <string name="category_coffee">Coffee and Tea</string>
+    <string name="category_other">Other</string>
+
+    <!-- Toast message in editor when current item was successfully updated -->
+    <string name="update_item_successful">Item updated</string>
+
+    <!-- Toast message in editor when current item has failed to be updated  -->
+    <string name="update_item_failed">Error with updating item</string>
+
+    <string name="delete_item_failed">Error with deleting item</string>
+
+    <!-- Toast message in editor when current item was successfully deleted  -->
+    <string name="delete_item_successful">Item deleted</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes  -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes  -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current item -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="perm_delete_dialog_msg">This will delete this item from all of your lists. Are you sure you want to permanently delete this item?</string>
+
+    <!-- Dialog button text for the option to confirm permanent deletion [CHAR LIMIT=20] -->
+    <string name="delete_perm_yes">Yes, Delete</string>
+
+    <!-- Dialog button text for the option to stop deleting the item [CHAR LIMIT=20] -->
+    <string name="delete_perm_no">No</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current list or item [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Label for menu option to delete a list or item[CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Toast message in editor when new list has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="insert_list_successful">List created</string>
+
+    <!-- Toast message in editor when new list has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="insert_list_failed">Error with creating list</string>
+
+
+
+    <string name="edit_category">Category</string>
+
+    <string name="edit_quantity">Quantity</string>
+
+    <string name="edit_price">Price</string>
+
+
+
+    <string name="hint_category">Uncategorized</string>
+
+    <string name="hint_quantity">Enter Quantity</string>
+
+    <string name="hint_price">Enter Price</string>
 </resources>
