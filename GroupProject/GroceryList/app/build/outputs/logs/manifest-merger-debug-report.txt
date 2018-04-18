@@ -1,0 +1,204 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c26f36da2fecbaa08517f926c2a6e43\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5485c73263d19c3b020883cd6bb9e31f\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8033d57a00a35cfea43cbd0278bdd0fb\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\8bd8abef70b0c7117de9b1150a845848\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\9ba127cecbea611d63d343d99b369e0b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\de7d02d54ebacaa4a9a9c0606eccd48b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\81fd8ac4b1927891880112de88107dad\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\db8c87a1b15feafa496ead687cf6ae74\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\211b7d5fd80be4d445ddc4b971ebd88f\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\93ab25ac91c86133e0ae50349d13464d\AndroidManifest.xml:17:1-30:12
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+	package
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:1-57:12
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:5:5-55:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c26f36da2fecbaa08517f926c2a6e43\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c26f36da2fecbaa08517f926c2a6e43\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5485c73263d19c3b020883cd6bb9e31f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5485c73263d19c3b020883cd6bb9e31f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8033d57a00a35cfea43cbd0278bdd0fb\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8033d57a00a35cfea43cbd0278bdd0fb\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\8bd8abef70b0c7117de9b1150a845848\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\8bd8abef70b0c7117de9b1150a845848\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\9ba127cecbea611d63d343d99b369e0b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\9ba127cecbea611d63d343d99b369e0b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\de7d02d54ebacaa4a9a9c0606eccd48b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\de7d02d54ebacaa4a9a9c0606eccd48b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\81fd8ac4b1927891880112de88107dad\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\81fd8ac4b1927891880112de88107dad\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\db8c87a1b15feafa496ead687cf6ae74\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\db8c87a1b15feafa496ead687cf6ae74\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\211b7d5fd80be4d445ddc4b971ebd88f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\211b7d5fd80be4d445ddc4b971ebd88f\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\93ab25ac91c86133e0ae50349d13464d\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\93ab25ac91c86133e0ae50349d13464d\AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:11:9-40
+activity#edu.qc.seclass.grocerylist.MainActivity
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:16:27-74
+activity#edu.qc.seclass.grocerylist.AddNewList
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:19:9-26:20
+	android:parentActivityName
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:22:13-55
+	android:label
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:21:13-41
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:20:13-39
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:23:13-25:49
+	android:value
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:25:17-46
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:24:17-63
+activity#edu.qc.seclass.grocerylist.ItemList
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:27:9-33:20
+	android:parentActivityName
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:29:13-55
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:28:13-37
+activity#edu.qc.seclass.grocerylist.Search
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:34:9-38:20
+	android:label
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:36:13-35
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:35:13-35
+activity#edu.qc.seclass.grocerylist.Result
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:39:9-42:20
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:40:13-35
+activity#edu.qc.seclass.grocerylist.Pop
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:43:9-45:45
+	android:theme
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:45:13-42
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:44:13-32
+activity#edu.qc.seclass.grocerylist.changeAmount
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:46:9-48:45
+	android:theme
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:48:13-42
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:47:13-41
+activity#edu.qc.seclass.grocerylist.createNew
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:49:9-52:20
+	android:label
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:50:13-44
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:49:19-44
+activity#edu.qc.seclass.grocerylist.addItem
+ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:53:9-54:55
+	android:theme
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:54:13-42
+	android:name
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml:53:19-42
+uses-sdk
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c26f36da2fecbaa08517f926c2a6e43\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\6c26f36da2fecbaa08517f926c2a6e43\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5485c73263d19c3b020883cd6bb9e31f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5485c73263d19c3b020883cd6bb9e31f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8033d57a00a35cfea43cbd0278bdd0fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8033d57a00a35cfea43cbd0278bdd0fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\8bd8abef70b0c7117de9b1150a845848\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\8bd8abef70b0c7117de9b1150a845848\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\9ba127cecbea611d63d343d99b369e0b\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\9ba127cecbea611d63d343d99b369e0b\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\de7d02d54ebacaa4a9a9c0606eccd48b\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\de7d02d54ebacaa4a9a9c0606eccd48b\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\81fd8ac4b1927891880112de88107dad\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\81fd8ac4b1927891880112de88107dad\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\db8c87a1b15feafa496ead687cf6ae74\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\db8c87a1b15feafa496ead687cf6ae74\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\211b7d5fd80be4d445ddc4b971ebd88f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\211b7d5fd80be4d445ddc4b971ebd88f\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\93ab25ac91c86133e0ae50349d13464d\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\93ab25ac91c86133e0ae50349d13464d\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+		ADDED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+		INJECTED from D:\370Team_GITHUB\370Spring18Team5\GroupProject\GroceryList\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5485c73263d19c3b020883cd6bb9e31f\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\5485c73263d19c3b020883cd6bb9e31f\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8033d57a00a35cfea43cbd0278bdd0fb\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\8033d57a00a35cfea43cbd0278bdd0fb\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\8bd8abef70b0c7117de9b1150a845848\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\8bd8abef70b0c7117de9b1150a845848\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\9ba127cecbea611d63d343d99b369e0b\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\9ba127cecbea611d63d343d99b369e0b\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\de7d02d54ebacaa4a9a9c0606eccd48b\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\de7d02d54ebacaa4a9a9c0606eccd48b\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\81fd8ac4b1927891880112de88107dad\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\81fd8ac4b1927891880112de88107dad\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\db8c87a1b15feafa496ead687cf6ae74\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\db8c87a1b15feafa496ead687cf6ae74\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\211b7d5fd80be4d445ddc4b971ebd88f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\211b7d5fd80be4d445ddc4b971ebd88f\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\29ced247f18c2ddc6634bdb856643065\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\93ab25ac91c86133e0ae50349d13464d\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\93ab25ac91c86133e0ae50349d13464d\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\jrtsurface\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\93ab25ac91c86133e0ae50349d13464d\AndroidManifest.xml:26:13-58

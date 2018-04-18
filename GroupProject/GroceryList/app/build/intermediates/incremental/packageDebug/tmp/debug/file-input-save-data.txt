@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Wed Apr 18 14:36:37 EDT 2018
+1.base=D\:\\370Team_GITHUB\\370Spring18Team5\\GroupProject\\GroceryList\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+2.path=databases/grocery.db
+0.baseType=DIRECTORY
+2.base=D\:\\370Team_GITHUB\\370Spring18Team5\\GroupProject\\GroceryList\\app\\build\\intermediates\\assets\\debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=DEX
+0.path=classes.dex
+0.set=DEX
+0.base=D\:\\370Team_GITHUB\\370Spring18Team5\\GroupProject\\GroceryList\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+2.baseType=DIRECTORY
+1.path=classes.dex

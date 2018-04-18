@@ -36,8 +36,7 @@
 *Describe the low-level design for each of the system components identified in the previous section. For each component, you should provide details in the following UML diagrams to show its internal structure.*
 
 ### 3.1 Class Diagram
-
-<img src ="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/Grocery%20List%201.1.jpeg" width="500" height="500">
+![alt text](https://i.imgur.com/qrFEjjv.jpg)
 
 ### 3.2 Other Diagrams
 
@@ -57,9 +56,7 @@
 5.  When the user closes the app, it should log the user off automatically to make the user's list more private and accessible to the user.  
 
 **NOTE:**  If the user clicks on the *Monthly List* button, same interface will be available and UI will look like from above design. 
-![alt text](https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/GroceryApp_1.PNG)
-
-
+![alt text](https://i.imgur.com/88sRaem.png)
 
 ## Update 2 - Interface Design
 1.  The team decided to remove user login screen.  It maybe implement for a future update of the app.
@@ -67,18 +64,26 @@
 3.  When the user clicks on the FAB button, user is taken to the "Enter List Name" interface.  In this interface, the user can enter the list she/he wants to create.  When the user hits the check mark, the newly created list is saved in the system user it taken to another screen.
 4.  Included Activity Diagram update on how different android activities rely on each other. 
 
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/ui.PNG">
+![alt text](https://i.imgur.com/x6UwpSB.png)
 
-## Activity Diagram Update 1
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/uml-1.png">
+### Activity Diagram Update 1
+![alt text]("https://i.imgur.com/x6UwpSB.png")
 
 ## Update 3 - Inteface Design
 1.  Dove more into UI design on adding lists will be implemented.  Mockups are created below.
 2.  Also update on different android activity dependencies.
-<img src= "https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/ui-2.PNG">
+![alt text](https://i.imgur.com/vOyP2CE.png)
 
-## Activity Digram Update 2
-<img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/uml-2.png">
+### Activity Digram Update 2
+![alt text](https://i.imgur.com/au9w4JP.png)
+
+## Update 4 - Interface Design
+1.  Additional screenshots added for the (GLM) app.  Mockups are created below.
+2.  Still the same android activity dependecies.  
+![alt text](https://i.imgur.com/K3ZwAQa.png)
+
+# UPDATE 5
+**The team descide not to use this app (although it will still be worked on) due to the lack of specified features.  Going to use the GroceryList App instead for submission which has almost, if not all, feature needed for the project.**
 
 
 

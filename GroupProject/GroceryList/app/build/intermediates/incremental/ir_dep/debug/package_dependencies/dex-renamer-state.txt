@@ -1,0 +1,4 @@
+#Wed Apr 18 14:36:31 EDT 2018
+base.0=D\:\\370Team_GITHUB\\370Spring18Team5\\GroupProject\\GroceryList\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
