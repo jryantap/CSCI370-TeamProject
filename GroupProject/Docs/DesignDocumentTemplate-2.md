@@ -60,22 +60,11 @@
 
 ## Update 2
 
-1.  The team decided use this app, under the GroceryList folder project, because it more stable and has the features needed for the project.
+**1.  The team decided use this app, under the GroceryList folder project, because it more stable and has the features needed for the project.**
 
 ### Screenshots:
-![alt text](https://i.imgur.com/sqUJBBh.png)
-![alt text](https://i.imgur.com/wioDi9B.png)
-![alt text](https://i.imgur.com/sDg3yis.png)
-![alt text](https://i.imgur.com/pcoIGxd.png)
-![alt text](https://i.imgur.com/4OsPWLH.png)
-![alt text](https://i.imgur.com/N4rpPA8.png)
-![alt text](https://i.imgur.com/TFvIEeo.png)
-![alt text](https://i.imgur.com/uAxS5yS.png)
-![alt text](https://i.imgur.com/42A5J5b.png)
-![alt text](https://i.imgur.com/zDNl1tX.png)
-![alt text](https://i.imgur.com/QD3I4Kw.png)
-![alt text](https://i.imgur.com/DxQfb4L.png)
-![alt text](https://i.imgur.com/gHJD2Ia.png)
+![Screenshots](https://i.imgur.com/u79G7Ic.png)
+
 
 ### Usage:
 
