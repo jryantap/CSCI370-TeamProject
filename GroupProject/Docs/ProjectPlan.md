@@ -2,9 +2,12 @@
 
 **Author**: Team 5
 
-Version 3.0
+Version 4.0
 
 Summary of Changes:
+
+Version 4.0:
+- Added Update 3
 
 Version 3.0:
 - Added Update 2
@@ -34,10 +37,13 @@ Our team will develop an Android app that will allow the user to create and mana
 - *Exit criteria*: Runs as intended if user is able to edit items to desired outcome.
 
 *Update 2*
-- same description can be found in DesignDocumentTemplate.md
+- Same description can be found in DesignDocumentTemplate.md
 - The team decided to remove the user login screen. It may be implemented in a future update of the app.
 - At app start-up, user is taken to the Shopping List menu. There is a a FAB (floating action button) on the bottom right corner that the user can click.
 - When the user clicks on the FAB button, user is taken to the "Enter List Name" interface. In this interface, the user can enter the list he/she wants to create. When the user hits the check mark, the newly created list is saved in the system and the user is taken to another screen.
+
+*Update 3*
+- Deliverable 4 unable to implement certain app requirements due to time constraints. Encountered some problems integrating the database with the app. 
 
 ## 3 Team
 
