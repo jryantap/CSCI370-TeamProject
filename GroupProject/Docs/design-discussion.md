@@ -141,4 +141,8 @@ addnewType() | [ ] | [ ] | [ ] | [ ] | [x] | [ ]
 ## Section 3: Summary
 As a group, we were able to communicate which individual design was appropriate for this assignment and chose "the best" one.  We looked into the different UML diagram submissions and pointed out some of the flaws and redundancies in each individual submission. Taking in to account the different perspectives of our members on how the grocery app should look like, we checked if the submissions met this assignment's requirements. The team decided to go with the pros and cons approach and made notes of them in this md file (written below each submission).  
 
-Based on the different designs, the group agreed to use tchu's design foundation. Though it still lacked some objects and required editing, we worked together to achieve the final design which is embedded in this md file with a copy placed in the team's group folder.  
+Based on the different designs, the group agreed to use tchu's design foundation. Though it still lacked some objects and required editing, we worked together to achieve the final design which is embedded in this md file with a copy placed in the team's group folder.
+
+# Summary: Update
+
+Due to time contraints on the Android project, the team decided that we work on two different app versions -- GLM and GroceryList.  Whichever project is done first by submission date and is fully functional,  we'll use that project for submission.    
