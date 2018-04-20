@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="seclass.qc.edu.glm">
+    package="edu.qc.seclass.grocerylist">
 
     <application
         android:allowBackup="true"
@@ -9,25 +9,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".CatalogActivity"
-            android:screenOrientation="portrait">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".CreateListActivity"
-            android:screenOrientation="portrait">
+        <activity
+            android:name=".AddNewList"
+            android:label="Add New List"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CatalogActivity" />
+                android:value=".MainActivity" />
         </activity>
-
-
-
-
+        <activity
+            android:name=".ItemList"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="Search"
+>
+        </activity>
+        <activity
+            android:name=".Result"
+>
+        </activity>
+        <activity
+            android:name=".Pop"
+            android:theme="@style/pop_up" />
+        <activity
+            android:name=".changeAmount"
+            android:theme="@style/pop_up" />
+        <activity android:name=".createNew"
+            android:label="Create New item"
+>
+        </activity>
+        <activity android:name=".addItem"
+            android:theme="@style/pop_up" ></activity>
     </application>
 
 </manifest>
