@@ -110,6 +110,6 @@ The testing technology intended to be utilized in this project will mainly consi
 | TC22 | Created item is successfully added in the database under correct item type.
 | TC23 | Lists and items are successfully saved to app after exiting.
 | TC24 | Clicking an item type succesfully opens a list of items of that type.
-| TC25 | App successfully restricts usage of special characters or capital letters in list and item names. | Thomas Chu
-| TC26 | Error message on attempting to search for an item without entering an input. | Thomas Chu
-| TC27 | Item quantity only accepts integer input. | Thomas Chu
+| TC25 | App successfully restricts usage of special characters or capital letters in list and item names. | | | | | | | Thomas Chu
+| TC26 | Error message on attempting to search for an item without entering an input. | | | | | | | Thomas Chu
+| TC27 | Item quantity only accepts integer input. | | | | | | | Thomas Chu
