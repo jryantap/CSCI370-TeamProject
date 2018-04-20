@@ -70,7 +70,6 @@ Version 2.0:
 				</ol>
 				Ex3: Fail to create list
 				<ol>
-					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 2</li>
 				</ol>
 			</td>
@@ -131,7 +130,6 @@ Version 2.0:
 				</ol>
 				Ex3: User fails to delete list
 				<ol>
-					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 3</li>
 				</ol>
 			</td>
@@ -198,7 +196,6 @@ Version 2.0:
 				</ol>
 				Ex3: User fails to add item
 				<ol>
-					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 3</li>
 				</ol>
 			</td>
@@ -260,7 +257,6 @@ Version 2.0:
 				</ol>
 				Ex3: Fail to delete item
 				<ol>
-					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 3</li>
 				</ol>
 			</td>
@@ -318,14 +314,12 @@ Version 2.0:
 				<ol>
 					<li>Return to Normal Course Step 1</li>
 				</ol>
-				Ex2: User doesn't enter an amount or valid input
+				Ex2: User doesn't enter an amount 
 				<ol>
-					<li>Inform user to enter a valid number</li>
-					<li>Return to Normal Course Step 4</li>
+					<li>redirect user to item list page</li>
 				</ol>
 				Ex4: Fail to change quantity of item
 				<ol>
-					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 3</li>
 				</ol>
 			</td>
@@ -380,7 +374,6 @@ Version 2.0:
 				</ol>
 				Ex2: Cannot check-off or remove check-off mark
 				<ol>
-					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 2</li>
 				</ol>
 			</td>
@@ -437,7 +430,6 @@ Version 2.0:
 				</ol>
 				Ex2: Cannot remove check-off mark
 				<ol>
-					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 2</li>
 				</ol>
 			</td>
