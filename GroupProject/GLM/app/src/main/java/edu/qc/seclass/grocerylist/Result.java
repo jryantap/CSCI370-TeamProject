@@ -97,7 +97,7 @@ public class Result extends AppCompatActivity {
             String amount=(String)data.getStringExtra("amount");
             boolean result = dataAccess.inserItem(position,itemID,amount);
             if(!result){
-                Toast.makeText(Result.this,"item may already in list",Toast.LENGTH_LONG).show();
+                Toast.makeText(Result.this,"Item may already be in list.",Toast.LENGTH_LONG).show();
             }
 
         }
