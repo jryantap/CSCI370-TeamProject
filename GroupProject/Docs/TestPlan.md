@@ -105,7 +105,11 @@ The testing technology intended to be utilized in this project will mainly consi
 | TC17 | Error message on an invalid item number (count). | 1.  Have an Item | 1. Check the number of Item in the list | Item name = blah, Item number = a | Error message is displayed. | N/A | N/A | Thomas Chu | N/A | N/A | N/A | Android Studio | Test case not valid. Item number input not implemented.
 | TC18 | "+" button successfully brings user to "Add New List" interface. | 1. App is open. | 1. Click on "+" icon at the top of the screen. | N/A | User is brought to "Add New List" interface. | N/A | N/A | Thom De Jesus | N/A | N/A | N/A | Android Studio | N/A
 | TC19 | Successful deletion of a list. | 1. User opens app. <br> 2. User has created a list. | 1. User chooses a list or lists to delete by clicking on empty check box to the right of list name. <br> 2. User clicks on trash icon. <br> 3. User confirms list(s) deletion by clicking "OK". | List name = weekly | List named "weekly" is successfully deleted. | N/A | N/A | Thom De Jesus | N/A | N/A | N/A | Android Studio | N/A
-| TC 20 | Back button successfully brings user to the previous interface.
-| TC 21 | Cancel button cancels user's action.
-| TC 22 | Created item is successfully added in the database under correct item type.
-
+| TC20 | Back button successfully brings user to the previous interface.
+| TC21 | Cancel button successfully cancels user's action.
+| TC22 | Created item is successfully added in the database under correct item type.
+| TC23 | Lists and items are successfully saved to app after exiting.
+| TC24 | Clicking an item type succesfully opens a list of items of that type.
+| TC25 | App successfully restricts usage of special characters or capital letters in list and item names. | Thomas Chu
+| TC26 | Error message on attempting to search for an item without entering an input. | Thomas Chu
+| TC27 | Item quantity only accepts integer input. | Thomas Chu
