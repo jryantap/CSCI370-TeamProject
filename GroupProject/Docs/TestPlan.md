@@ -2,7 +2,7 @@
 
 
 
-******Author******:  Thom De Jesus, Thomas Chu
+******Author******:  Thom De Jesus, Thomas Chu, Joseph Huaynate
 
 Version 4.0
 
