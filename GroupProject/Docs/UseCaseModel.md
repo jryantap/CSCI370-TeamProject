@@ -1,7 +1,8 @@
 
 # Use Case Model
 
-**Author**: \<Sai Wai Li\>
+**Author**: Sai Wai Li  
+Edited by: Thom De Jesus
 
 Version 2.0
 
@@ -10,6 +11,7 @@ Summary of Changes:
 Version 2.0:
 - Removed use cases associated with user login.
 - Revised use cases to reflect app implementation changes. 
+- Updated use case diagram.
 
 ## 1 Use Case Diagram
 
@@ -49,7 +51,7 @@ Version 2.0:
 					<li>The user opens the apps</li>
 					<li>The user chooses "+" button on the top right corner to create new list</li>
 					<li>The user enters the name of the new list</li>
-					<li>The user clicks the check mark.
+					<li>The user clicks "SUBMIT".
 					<li>The app acknowledges the list is created</li>
 					<li>The app redirects the user to the main page</li>
 				</ol>
@@ -66,12 +68,7 @@ Version 2.0:
 				<ol>
 					<li>Return to Normal Course Step 1</li>
 				</ol>
-				Ex3: The name the user enters contains a symbol<br>
-				<ol>
-					<li>Informs user that there are no symbols allowed in the list name</li>
-					<li>Return to Normal Course Step 3</li>
-				</ol>
-				Ex4: Fail to create list
+				Ex3: Fail to create list
 				<ol>
 					<li>Inform user that an error has occurred</li>
 					<li>Return to Normal Course Step 2</li>
@@ -114,25 +111,11 @@ Version 2.0:
 			<td>
 				<ol>
 					<li>The user opens the app</li>
-					<li>The user chooses "Delete List"</li>
 					<li>The user selects one or more lists</li>
+					<li>The user chooses "Delete List"</li>
 					<li>The app prompts user to comfirm</li>
 					<li>The app acknowledges that the list has been deleted</li>
 					<li>The app redirects user to the main page</li>
-				</ol>
-			</td>
-		</tr>
-		<tr>
-			<td><b>Alternate Courses</b></td>
-			<td>
-				AC1: Delete List inside the List
-				<ol>
-					<li>The user opens the app</li>
-					<li>The user opens a list</li>
-					<li>The user chooses "Delete List"</li>
-					<li>The app prompts user to comfirm</li>
-					<li>The app acknowledges that the list has been deleted</li>
-					<li>The apps redirects user to the main page</li>
 				</ol>
 			</td>
 		</tr>
@@ -196,6 +179,7 @@ Version 2.0:
 					<li>The user searches item by name or by item type</li>
 					<li>The user selects the item</li>
 					<li>The app prompts user for quantity</li>
+					<li>The user selects "OK"</li>
 					<li>The app acknowledges that the item is added</li>
 					<li>The app redirects user to the search page</li>
 				</ol>
@@ -251,7 +235,7 @@ Version 2.0:
 		</tr>
 		<tr>
 			<td><b>Post-conditions:</b></td>
-			<td>New item is deleted from the list</td>
+			<td>Item is deleted from the list</td>
 		</tr>
 		<tr>
 			<td><b>Normal Course:</b></td>
@@ -259,8 +243,8 @@ Version 2.0:
 				<ol>
 					<li>The user opens the app</li>
 					<li>The user selects a list</li>
-					<li>The user chooses "Delete Item"</li>
 					<li>The user selects one or more item</li>
+					<li>The user chooses "Delete Item"</li>
 					<li>The app prompts user to comfirm</li>
 					<li>The app acknowledges that the item(s) has been deleted</li>
 					<li>The app redirects user to the item list page</li>
@@ -321,6 +305,7 @@ Version 2.0:
 					<li>The user selects a list</li>
 					<li>The user selects one item</li>
 					<li>The user changes the quantity</li>
+					<li>The user selects "OK"</li>
 					<li>The app acknowledges that the quantity is changed</li>
 					<li>The app redirects user to the item list page</li>
 				</ol>

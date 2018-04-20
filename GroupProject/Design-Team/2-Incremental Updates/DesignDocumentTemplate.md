@@ -72,6 +72,12 @@
 
 <img src="https://github.com/qc-se-spring2018/370Spring18Team5/blob/jrtbranch/GroupProject/Design-Team/2-Incremental%20Updates/classDiagram-1.png">
 
+## Update 3 - Interface Design
+1.  Due to time constraints, Jherico-Ryan Tapang, Sai Wai Li, Thomas Chu and Thom De Jesus decided choose Sai Wai Li's Ui app version.  Jherico-Ryan Tapang's app version wasn't up to par to what is needed to be done with this project.
+2.  Please see Instruction Manual on how to use the app.
+
+
+
 
 
 
